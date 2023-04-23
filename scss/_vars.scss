@@ -1,0 +1,128 @@
+/*$Butler: 'Butler',
+sans-serif;*/
+
+$active: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+
+$focus:white;
+
+
+
+$ac: #fcd7b6;
+$default:#000000;
+$white: #FFFFFF;
+$black: #000000;
+$title: #436372;
+$btn-menu:silver;
+
+
+
+
+$hover-default: #FF6767;
+$Button-default:#FF3B3B;
+
+$hover-ac:linear-gradient(98.89deg, #FFAF37 25.06%, #FFB076 88.94%);
+$Button-Station:linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+
+$slider-hover: linear-gradient(103.01deg, #88D4FF -49.1%, #4FFFFF 177.15%);
+$slider-Station: linear-gradient(103.01deg, #0AA6FE -49.1%, #05FFFF 177.15%);
+
+$hover: linear-gradient(139.21deg, #FFFFFF 23.04%, #0AA6FE 351.02%, #05FFFF 363.71%);
+$hover-faq: linear-gradient(91.64deg, rgba(0, 148, 255, 0.11) 0.37%, rgba(5, 255, 255, 0.18) 92.7%);
+
+
+
+
+
+
+/*$ac: #fcd7b6;
+
+/*accent*/
+// $orange: #FF9900;
+// $green:#14B4BE;
+// $green:#14B4BE;
+// $antique:#fde7d3;
+// $default: #243f4d;
+// $Cream: #feefe2;
+// $Crayola: #c2d2db;
+// $red: #e72828;
+// $red1 :#fe3e57;
+// $orange: #ffa500;
+
+
+//section
+$padding-main:100px;
+$padding-1200:60px;
+$padding-992:50px; //70
+$padding-768:40px; //50
+$padding-576:30px;
+
+// @mixin line-clamp-box($line-clamp, ) {
+//     display: -webkit-box;
+//     -webkit-line-clamp: $line-clamp;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+// }
+
+// @mixin line-clamp-inline($line-clamp, ) {
+//     display: -webkit-inline-flex;
+//     -webkit-line-clamp: $line-clamp;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+// }
+
+// @mixin line-clamp-one($max-width, ) {
+//     white-space: nowrap;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     display: block;
+//     max-width: $max-width;
+// }
+
+// @mixin line-height($font-size, $line-height, ) {
+//     line-height: ($line-height / $font-size)
+// }
+
+
+// @mixin clamp($font-size,
+//     $line-height,
+//     $lines-to-show) {
+//     // display: block; // Fallback for non-webkit browsers
+//     display: -webkit-box;
+//     font-size: rem($font-size);
+//     max-height: rem(($font-size * $line-height * $lines-to-show)); // Fallback for non-webkit browsers
+//     line-height: $line-height;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     -webkit-box-orient: vertical;
+//     -webkit-line-clamp: $lines-to-show;
+// }
+
+// @mixin line-clamp($line-clamp, ) {
+//     display: -webkit-box;
+//     -webkit-line-clamp: $line-clamp;
+//     -webkit-box-orient: vertical;
+//     overflow: hidden;
+    
+// }
+
+// @mixin line-height($font-size, $line-height, ) {
+
+//     line-height: ( $line-height / $font-size)
+// }
+/*
+@include clamp(5);
+*/
+
+// $browser-context: 16;
+
+// @function em($pixels, $context: $browser-context) {
+//   @if (unitless($pixels)) {
+//     $pixels: $pixels * 1px;
+//   }
+
+//   @if (unitless($context)) {
+//     $context: $context * 1px;
+//   }
+
+//   @return $pixels / $context * 1em;
+// }
