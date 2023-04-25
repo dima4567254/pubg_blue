@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon">
-    <title></title>
+    <title>Pubg</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <!-- картинки в интро хз контентные нет
     a user сылка или нет
--->
+
+    <!-- 518проверить на лишнии обертки -->
+<!-- не уверен что h3  519-->
+<!-- 624 проверить может можно без флекс -->
+<!-- решил не писать ограничение текста -->
+
+<!--.section--bem 
+    .title--bem
+ -->
+
 
 <body>
     <header class="header">
@@ -100,8 +109,8 @@
                             Найнижча ціна за мегахеш
                         </p>
                     </div>
-                    <div class="intro__links">
-                        <a class="intro__link link" href="#">
+                    <div class="links">
+                        <a class="links__link link" href="#">
                             Придбати
                         </a>
                         <a class="video" data-fancybox style="background-image: url('images/video-bg.jpg')"
@@ -110,84 +119,597 @@
                         </a>
                     </div>
                 </div>
-                <img src="images/weapon.png" alt="Зброя">
+                <img class="intro__img" src="images/weapon.png" alt="Зброя">
         </section>
 
         <section class="functions">
             <div class="container container-sm">
                 <div class="functions__wrapper">
                     <div class="functions__slider">
-                        
+                        <div class="product-tabs">
+                            <div class="product-tabs__item-top">
+                                <a class=" product-tabs__link  product-tabs__link--active" href="#tab-1">
+                                    Windows
+                                </a>
+                                <a class=" product-tabs__link  product-tabs__link--information" href="#tab-2">
+                                    Android
+                                </a>
+                                <a class="product-tabs__link" href="#tab-3">
+                                    iOS
+                                </a>
+                            </div>
+                            <div class="product-tabs__content">
+                                <div class="product-tabs__text product-tabs__text--active" id="tab-1">
+                                    <p>
+                                        content1
+                                    </p>
+                                </div>
+                                <div class="product-tabs__text" id="tab-2">
+                                    <p>
+                                        content2
+                                    </p>
+                                </div>
+                                <div class="product-tabs__text" id="tab-3">
+                                    <p>
+                                        content3
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-functions">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="swiper-slide">Slide 2</div>
+                                <div class="swiper-slide">Slide 3</div>
+                                <div class="swiper-slide">Slide 4</div>
+                                <div class="swiper-slide">Slide 5</div>
+                                <div class="swiper-slide">Slide 6</div>
+                                <div class="swiper-slide">Slide 7</div>
+                                <div class="swiper-slide">Slide 8</div>
+                                <div class="swiper-slide">Slide 9</div>
+                                <div class="swiper-slide">Slide 10</div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
                     </div>
-                    <div class="functions__box"></div>
+                    <div class="functions__box">
+                        <h2 class="functions__title">
+                            Функціонал
+                        </h2>
+                        <div class="functions__text">
+                            <p>
+                                Унікальний чит на iOS підійде для всіх пристроїв
+                                починаючи від айфону 4S+.
+                            </p>
+                        </div>
+                        <ul class="functions__items">
+                            <li class="functions__item">
+                                <svg class="social__svg" width="10px" height="10px">
+                                    <use xlink:href="images/sprite.svg#rhombus">
+                                    </use>
+                                </svg>
+                                <span>WallHack</span> - виявляє супротивників крізь стіни.
+                            </li>
+                            <li class="functions__item">
+                                <svg class="social__svg" width="10px" height="10px">
+                                    <use xlink:href="images/sprite.svg#rhombus">
+                                    </use>
+                                </svg>
+                                <span>AntiRecoil</span> – відключає віддачу на будь-якій зброї.
+                            </li>
+                            <li class="functions__item">
+                                <svg class="social__svg" width="10px" height="10px">
+                                    <use xlink:href="images/sprite.svg#rhombus">
+                                    </use>
+                                </svg>
+                                <span>Aimbot</span> – автоматично наводить приціл на противника.
+                            </li>
+                            <li class="functions__item">
+                                <svg class="social__svg" width="10px" height="10px">
+                                    <use xlink:href="images/sprite.svg#rhombus">
+                                    </use>
+                                </svg>
+                                <span>Drop <span>– показує топові речі крізь стіни.
+                            </li>
+                        </ul>
+                        <div class="functions__info">
+                            <svg class="social__svg" width="32px" height="28px">
+                                <use xlink:href="images/sprite.svg#attention">
+                                </use>
+                            </svg> Рекомендуем, оставить стандартные параметры в чите
+                        </div>
+                        <div class="links">
+                            <a class="links__link link" href="#">
+                                Придбати
+                            </a>
+                            <a class="video" data-fancybox style="background-image: url('images/video-bg.jpg')"
+                                href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
+                                Подивитись відео
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </section>
 
-        <section class="">
+        <section class="about">
             <div class="container">
+                <h2 class="about__title">
+                    що кажуть про нас
+                </h2>
 
-            </div>
+                <div class="swiper-about">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__box">
+                                <h3 class="swiper-slide__title">
+                                    Егор Черняев
+                                </h3>
+                                <div class="swiper-slide__text">
+                                    <p>
+                                        Рекомендую данный софт! Аналогов не нашел нигде, я решил не
+                                        заморачиваться и сразу приобрел ПРО версию и
+                                        теперь играю в свое удовольствие.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                        <div class="swiper-slide">Slide 10</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
         </section>
 
-        <section class="">
+        <section class="rates">
             <div class="container">
-
+                <h2 class="rates__title">
+                    тарифы
+                </h2>
+                <div class="product-tabs">
+                    <div class="product-tabs__item-top">
+                        <a class=" product-tabs__link  product-tabs__link--active" href="#tab-1">
+                            Windows
+                        </a>
+                        <a class=" product-tabs__link  product-tabs__link--information" href="#tab-2">
+                            Android
+                        </a>
+                        <a class="product-tabs__link" href="#tab-3">
+                            iOS
+                        </a>
+                    </div>
+                    <div class="product-tabs__content">
+                        <div class="product-tabs__text product-tabs__text--active" id="tab-1">
+                            <p>
+                                content1
+                            </p>
+                        </div>
+                        <div class="product-tabs__text" id="tab-2">
+                            <p>
+                                content2
+                            </p>
+                        </div>
+                        <div class="product-tabs__text" id="tab-3">
+                            <p>
+                                content3
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="rates__list">
+                    <li class="rates__wrapper">
+                        <h3 class="rates__title rates__title--regular">
+                            обычная
+                        </h3>
+                        <div class="rates__info">
+                            1 месяц
+                        </div>
+                        <ul class="rates__items">
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Весь функціонал читає
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Оновлення 1 раз на місяць
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Весь функціонал читає + NEW
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Анті-Бан
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#close_big">
+                                    </use>
+                                </svg>
+                                Поліпшена оптимізація
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#close_big">
+                                    </use>
+                                </svg>
+                                Запуск на інших телефонах
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#close_big">
+                                    </use>
+                                </svg>
+                                dpi+, asn, skk
+                            </li>
+                        </ul>
+                        <div class="rates__price">
+                            649<span>₽</span>
+                        </div>
+                        <a class="rates__link" href="#">
+                            Придбати
+                            <svg class="social__svg" width="44px" height="24px" fill="#FFFFFF">
+                                <use xlink:href="images/sprite.svg#right arrow">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="rates__wrapper">
+                        <h3 class="rates__title rates__title--standard">
+                            стандартная
+                        </h3>
+                        <div class="rates__info">
+                            3 месяц
+                        </div>
+                        <ul class="rates__items">
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Весь функціонал читає
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Постійні оновлення
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Підтримка 24/7
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Покращений Анти-Бан
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Поліпшена оптимізація
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Запуск на інших телефонах
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#close_big">
+                                    </use>
+                                </svg>
+                                dpi+, asn, skk
+                            </li>
+                        </ul>
+                        <div class="rates__price">
+                            1 499<span>₽</span>
+                        </div>
+                        <a class="rates__link" href="#">
+                            Придбати
+                            <svg class="social__svg" width="44px" height="24px">
+                                <use xlink:href="images/sprite.svg#close_big">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="rates__wrapper">
+                        <h3 class="rates__title rates__title--version">
+                            pro версія
+                        </h3>
+                        <div class="rates__info">
+                            Назавжди
+                        </div>
+                        <ul class="rates__items">
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Весь функціонал читає + NEW
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Всі оновлення + BETA тест
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Підтримка 24/7
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Найпотужніший Анті-Бан
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Максимальна оптимізація
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                Запуск на інших телефонах
+                            </li>
+                            <li class="rates__item">
+                                <svg class="social__svg" width="23px" height="18px">
+                                    <use xlink:href="images/sprite.svg#ready">
+                                    </use>
+                                </svg>
+                                dpi+, asn, skk
+                            </li>
+                        </ul>
+                        <div class="rates__price">
+                            2 899<span>₽</span>
+                        </div>
+                        <a class="rates__link" href="#">
+                            Придбати
+                            <svg class="social__svg" width="23px" height="18px">
+                                <use xlink:href="images/sprite.svg#ready">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
 
-        <section class="">
+        <section class="questions">
             <div class="container">
-
+                <h2 class="questions__title">
+                    ЧАСТІ ПИТАННЯ
+                </h2>
+                <ul class="questions__items">
+                    <li class="questions__item">
+                        <div class="questions__box">
+                            <h3 class="questions__subtitle">
+                                Які ми маємо гарантії?
+                            </h3>
+                            <svg class="social__svg" width="17px" height="17px">
+                                <use xlink:href="images/sprite.svg#plus">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="questions__text">
+                            <p>
+                                Ми офіційні дилери цього читання. Нам довіряє безліч людей. Також, Ви
+                                Ви можете переглянути представлені скріншоти читів вище.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <div class="questions__box">
+                            <h3 class="questions__subtitle">
+                                Як встановлюються чити?
+                            </h3>
+                            <svg class="social__svg" width="17px" height="17px">
+                                <use xlink:href="images/sprite.svg#plus">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="questions__text">
+                            <p>
+                                Ми офіційні дилери цього читання. Нам довіряє безліч людей. Також, Ви
+                                Ви можете переглянути представлені скріншоти читів вище.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <div class="questions__box">
+                            <h3 class="questions__subtitle">
+                                Що я отримаю після оплати тарифу?
+                            </h3>
+                            <svg class="social__svg" width="17px" height="17px">
+                                <use xlink:href="images/sprite.svg#plus">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="questions__text">
+                            <p>
+                                Ми офіційні дилери цього читання. Нам довіряє безліч людей. Також, Ви
+                                Ви можете переглянути представлені скріншоти читів вище.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <div class="questions__box">
+                            <h3 class="questions__subtitle">
+                                Що таке DPI+, ASN, SKK?
+                            </h3>
+                            <svg class="social__svg" width="17px" height="17px">
+                                <use xlink:href="images/sprite.svg#plus">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="questions__text">
+                            <p>
+                                Ми офіційні дилери цього читання. Нам довіряє безліч людей. Також, Ви
+                                Ви можете переглянути представлені скріншоти читів вище.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="questions__item">
+                        <div class="questions__box">
+                            <h3 class="questions__subtitle">
+                                Чи впливають чити на FPS у грі?
+                            </h3>
+                            <svg class="social__svg" width="17px" height="17px">
+                                <use xlink:href="images/sprite.svg#plus">
+                                </use>
+                            </svg>
+                        </div>
+                        <div class="questions__text">
+                            <p>
+                                Ми офіційні дилери цього читання. Нам довіряє безліч людей. Також, Ви
+                                Ви можете переглянути представлені скріншоти читів вище.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <a class="questions__link" href="#">
+                    У мене є питання
+                </a>
             </div>
         </section>
 
-        <section class="">
+        <section class="contacts">
             <div class="container">
-
+                <h2 class="contacts__title">
+                    Контакти
+                </h2>
+                <form class="form">
+                    <h3 class="form__subtitle">
+                        Зворотній зв'язок
+                    </h3>
+                    <label class="sr-only" for="name">
+                        Ваше ім'я
+                    </label>
+                    <input class="form__input" id="name-input" type="text" name="name" placeholder="Ваше ім'я" required
+                        oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
+                    <label class="sr-only" for="email">
+                        Введіть ваш емейл
+                    </label>
+                    <input class="form__input" id="email-input" type="email" name="email"
+                        placeholder="Введіть ваш емейл" required
+                        oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
+                    <textarea class="form__message" name="message" id="message" placeholder="Коментар" required
+                        oninvalid="this.setCustomValidity('Поле заповнене неправильно!')"></textarea>
+                    <button class="form__btn" type="submit">
+                        Відправити
+                    </button>
+                </form>
             </div>
         </section>
-
-        <section class="">
-            <div class="container">
-
-            </div>
-        </section>
-
-
     </main>
 
     <footer class="footer">
-
+        <div class="container">
+            <nav class="menu">
+                <a class="logo menu__logo" href="#">
+                    <img class="logo__menu" src="images/logo.png" alt="logo">
+                </a>
+                <button class="menu__btn" type="button">
+                    <span></span>
+                    <span class="sr-only">open menu</span>
+                </button>
+                <ul class="menu__items">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="#">
+                            Головна
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#service">
+                            Тарифи
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#collections">
+                            Відгуки
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#products">
+                            Faq
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">
+                            Контакти
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#blog">
+                            Функціонал
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu__nav">
+                    <div class="dropdown">
+                        <select class="dropdown__select">
+                            <option class="dropdown__optoon dropdown-svg" value="1" name="email">1
+                            </option>
+                            <option class="dropdown__optoon" value="0" name="email">2</option>
+                        </select>
+                    </div>
+                    <a class="menu__user" href="#">
+                        <svg class="social__svg" width="15px" height="15px" fill="#bcbcbc">
+                            <use xlink:href="images/sprite.svg#user">
+                            </use>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+            <div class="fotter__copy">
+                Защищено 2023 (C)
+            </div>
+        </div>
     </footer>
 
-
-    <!--
-<a class="video" data-fancybox style="background-image: url('images/video-bg.jpg')"
-    href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
-    <span class="sr-only">play video</span>
-</a>
--->
-
-    <!--
-  <form class="footer-top__form">
-      <label class="sr-only" for="email">
-          Enter your email
-      </label>
-      <input class="footer-top__input" id="email-input" type="email" name="email" placeholder="Your Email" required
-          oninvalid="this.setCustomValidity('fill in this field!')">
-      <button class="footer-top__btn" type="submit">
-          <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
-              xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="17" viewBox="0 0 20 17">
-              <image id="send" width="20" height="17"
-                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAABW0lEQVQ4jaWUTytEURjGf1NiJDTjfzNlYWFhKysbvoaV72LpOyhSIikmyUiztRKmsBYz2SgNOz169d66/5sZT91u9557fud5n/fcU5B0ApwBF8Ab/5QBO8AI8AAY/Bi47xsrqaWo2pL2Ja1LGpRELxcOSNOPpIakTUmVbqFWchuYSViP6g6oAQdAMzEaK/krxV2W3j2ONUnFLId7wAJQAqaAsjUrsXJSDcDm1oGXYLTwFySMAhNeukHngKo/230emAbGgaEYuulxHAK3ATBPw76YOV8EloFVYAUYCM2zPbwVfmGrT7qTwGUFmHWXVR+3aoohWAu4BI4sBnu5DSx5hmWfVMpxHOjJM6xFfgRJ3xkdTVNH0rWkDUljaV02h5+eU55egXMvq57zXSTUND0DO8Ap8Jgy3hXQDosbYNdPoY9uQGFgsK+sWwawsq56gcSBdmxZLrYxrcT+BfwCdYhXWkZ0abIAAAAASUVORK5CYII=" />
-          </svg>
-          <span class="sr-only">send message button</span>
-      </button>
-  </form>
-
--->
     <script src="js/main.min.js"></script>
 </body>
 
