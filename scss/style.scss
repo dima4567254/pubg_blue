@@ -4,11 +4,259 @@
 @import 'global';
 @import 'libs';
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    // background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .menu {
-    .menu__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 20px 0;
+    padding: 20px 0;
+
+
+    &__logo {
+        width: 100px;
+        height: 30px;
+        object-fit: cover;
+    }
+
+    &__btn {
         display: none;
     }
+
+    &__items {
+        display: flex;
+        gap: 80px;
+    }
+
+    &__item {}
+
+    &__link {
+        font-size: 17px;
+        color: $white;
+        text-transform: uppercase;
+        transition: background 0.5s;
+
+        &:focus {
+            color: $focus;
+        }
+
+        &:hover {
+            color: transparent;
+            background-clip: text;
+            background-image: linear-gradient(139.21deg, #FFFFFF 23.04%, #0AA6FE 351.02%, #05FFFF 363.71%);
+            // записать в снипеты
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    // не помню актив на линк или итем
+    &__link--active {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 3px;
+            width: 25px;
+            background: $Button-Station;
+            // почему то только так работает
+        }
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__user {
+        padding: 18px;
+        background: $Button-Station;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+        // border-radius: 5px;
+        transition: background 5.5s;
+        // надо что то придумать с ховером
+
+        &:focus {
+            color: $focus;
+        }
+
+        &:hover {
+            background: $hover-ac;
+            // background-color:$hover-ac;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__svg {}
 }
+
+.logo {
+    &__menu {}
+}
+
+.dropdown {
+    background-color: $white;
+    box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    margin-right: 15px;
+
+    &__optoon {
+        text-transform: uppercase;
+    }
+}
+
+
+
+.intro {
+    display: flex;
+    align-items: center;
+    background-image: url('../images/icons/blue_bg.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: $white;
+
+
+    &__box {
+        max-width: 750px;
+        margin-left: 10%;
+        // position: relative;
+
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     // left: 862px;
+        //     left: 0%;
+        //     top: 131px;
+        //     height: 661px;
+        //     width: 1048px;
+        //     background-image: url('../images/car.png');
+        //     background-repeat: no-repeat;
+        //     background-position: center;
+        //     background-size: cover;
+        // }
+    }
+
+    &__info {
+        margin-left: 20%;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 55px;
+
+        text-transform: uppercase;
+        margin-bottom: 60px;
+    }
+
+    &__svg {}
+
+    &__text {
+        font-weight: 600;
+        line-height: 22px;
+        margin-bottom: 45px;
+    }
+
+    &__text p {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__img {}
+}
+
+
+
+.links {
+    margin-bottom: 30px;
+    &__link {
+        background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        padding: 20px 50px;
+        margin-right: 35px;
+        transition: color 0.5s;
+        display: inline-flex;
+        align-items: center;
+
+        &:focus {
+            color: $focus;
+        }
+
+        &:hover {
+            background: $hover-ac;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+
+    &__svg {
+        margin-left: 35px;
+    }
+}
+
+
+
+
+
+
+.video {
+    // background: linear-gradient(113.71deg, #A9EAFF 12.56%, #6CFFFF 85.62%);
+    border-radius: 5px;
+    // border: 1px solid $slider-Station;
+    padding: 19px 38px;
+    border: 1px solid skyblue;
+    border-image: linear-gradient(113.71deg, #A9EAFF 12.56%, #6CFFFF 85.62%);
+    border-image-slice: 1;
+    transition: color 0.5s;
+
+    &:focus {
+        color: $focus;
+    }
+
+    &:hover {
+        background: $hover-default;
+    }
+
+    &:active {
+        color: $active;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .product-tabs {
@@ -87,11 +335,128 @@
         }
     }
 
-    &__text p {
-        // @include line-clamp-box(6);
+    // &__text p {
+    //     // @include line-clamp-box(6);
+    // }
+}
+
+// ------------------------------------------------------
+// стили выпадающего списка
+// отпимизировать и внести цвета
+
+option {
+    padding-left: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+// option:active {
+//     background-color: red;
+// }
+
+
+// option:hover {
+//     background-color: #EDF4FF;
+// }
+
+
+.jq-selectbox {
+    margin-right: 0;
+}
+
+.icon-ok {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 25%;
+        left: 15px;
+        height: 23px;
+        width: 35px;
+        background: url('../images/icons/1.svg') no-repeat;
     }
 }
 
+.icon-error {
+    position: relative;
+    z-index: 999;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 25%;
+        left: 15px;
+        height: 23px;
+        width: 35px;
+        background: url('../images/icons/2.svg') no-repeat;
+    }
+}
+
+.jq-selectbox__select {
+    height: 60px;
+    width: 125px;
+    background: transparent;
+    padding: 0;
+    padding-left: 11px;
+    display: flex;
+}
+
+.jq-selectbox__select:hover {
+    background: transparent;
+
+}
+
+.jq-selectbox__select-text {
+    margin-left: 50px;
+    margin-top: 19px;
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: #000000;
+}
+
+.jq-selectbox__trigger {
+    border: none;
+}
+
+.jq-selectbox__trigger-arrow {
+    top: 26px;
+    border-top: 5px solid #2E3A59;
+}
+
+.active {
+    background-image: url('../images/caret_down.svg');
+    background-position: right;
+    background-size: auto;
+}
+
+.jq-selectbox li.selected {
+    background-color: transparent;
+    color: #000000;
+}
+
+.jq-selectbox li {
+    height: 40px;
+    text-align: center;
+    line-height: 2;
+    padding-left: 35px;
+    font-size: 17px;
+
+    &:hover {
+        background-color: #EDF4FF;
+        color: #000;
+    }
+}
+
+.sel {
+    background-image: url('../images/icons/caret_down.svg');
+    background-position: 90% 50%;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+// ------------------------------------------------------
 
 
 /*медия всегда должны быть в низу */

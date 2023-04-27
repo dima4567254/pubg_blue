@@ -10,6 +10,10 @@ $(function name(params) {
         // табы
     });
 
+    setTimeout(function () {
+        $('select,filter-selects__sort').styler();
+    }, 100)
+
     /*	$(".menu a").on("click", function (event) {
             event.preventDefault();
             var id = $(this).attr('href'),

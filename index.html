@@ -68,15 +68,16 @@
                     </li>
                 </ul>
                 <div class="menu__nav">
-                    <div class="dropdown">
+                    <form class="dropdown">
                         <select class="dropdown__select">
-                            <option class="dropdown__optoon dropdown-svg" value="1" name="email">1
+                            <option value="1" class="dropdown__optoon icon-ok">
+                                ru
                             </option>
-                            <option class="dropdown__optoon" value="0" name="email">2</option>
+                            <option value="0" class="dropdown__optoon icon-error">en</option>
                         </select>
-                    </div>
-                    <a class="menu__user" href="#">
-                        <svg class="social__svg" width="15px" height="15px" fill="#bcbcbc">
+                    </form>
+                    <a class="menu__user link" href="#">
+                        <svg class="menu__svg" width="22px" height="24px">
                             <use xlink:href="images/sprite.svg#user">
                             </use>
                         </svg>
@@ -88,15 +89,14 @@
 
     <main class="main">
         <section class="intro">
-            <div class="container">
-                <div class="intro__box">
+            <!-- <div class="container"> -->
+            <div class="intro__box">
+                <div class="intro__info">
                     <h1 class="intro__title">
-                        чити на p
-                        <svg class="intro__svg" width="15px" height="15px" fill="#bcbcbc">
+                        чити на p<svg class="intro__svg" width="59px" height="59px">
                             <use xlink:href="images/sprite.svg#diamonds">
                             </use>
-                        </svg>
-                        ubg
+                        </svg>ubg
                         кращі на ринку
                         без бану!
                     </h1>
@@ -112,6 +112,10 @@
                     <div class="links">
                         <a class="links__link link" href="#">
                             Придбати
+                            <svg class="links__svg" width="54px" height="30px">
+                                <use xlink:href="images/sprite.svg#right-arrow">
+                                </use>
+                            </svg>
                         </a>
                         <a class="video" data-fancybox style="background-image: url('images/video-bg.jpg')"
                             href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
@@ -120,6 +124,8 @@
                     </div>
                 </div>
                 <img class="intro__img" src="images/weapon.png" alt="Зброя">
+            </div>
+            <!-- </div> -->
         </section>
 
         <section class="functions">
