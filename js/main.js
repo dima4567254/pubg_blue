@@ -13,6 +13,22 @@ $(function name(params) {
     setTimeout(function () {
         $('select,filter-selects__sort').styler();
     }, 100)
+    // document.querySelector('.video').style.display = 'none';
+
+    // $(function name(params) {
+    const swiper = new Swiper('.swiper', {
+        // slidesPerView: 1,
+        // loop: true,
+        // loopedslides: 1,
+        // slidesPerView: 2,
+        // grid: {
+        //     rows: 2,
+        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
 
     /*	$(".menu a").on("click", function (event) {
             event.preventDefault();
@@ -22,7 +38,7 @@ $(function name(params) {
                 scrollTop: top
             }, 1500);
         });
-
+ 
         /*для закрыть меню*/
     /*
               $('.menu__btn').on('click', function () {
@@ -36,8 +52,8 @@ $(function name(params) {
                 dots: true,
                 arrows: false,
                  responsive: [
-
-
+ 
+ 
                      {
                          breakpoint: 1150,
                          settings: {

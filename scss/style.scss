@@ -4,6 +4,9 @@
 @import 'global';
 @import 'libs';
 
+// сделать для всех svg применять по классу
+// background-color сснипед
+
 .header {
     position: fixed;
     top: 0;
@@ -21,13 +24,6 @@
     // padding: 20px 0;
     padding: 20px 0;
 
-
-    &__logo {
-        width: 100px;
-        height: 30px;
-        object-fit: cover;
-    }
-
     &__btn {
         display: none;
     }
@@ -44,6 +40,8 @@
         color: $white;
         text-transform: uppercase;
         transition: background 0.5s;
+        outline-color: #000000;
+        outline-offset: 5px;
 
         &:focus {
             color: $focus;
@@ -83,15 +81,16 @@
     }
 
     &__user {
-        padding: 18px;
+        padding: 18px 27px 18px 27px;
         background: $Button-Station;
         display: flex;
         justify-content: center;
         align-items: center;
         box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
         // border-radius: 5px;
-        transition: background 5.5s;
-        // надо что то придумать с ховером
+        transition: opacity 5.5s;
+        opacity: 1;
+        // !!!надо что то придумать с ховером
 
         &:focus {
             color: $focus;
@@ -99,6 +98,8 @@
 
         &:hover {
             background: $hover-ac;
+            opacity: 0.99;
+
             // background-color:$hover-ac;
         }
 
@@ -111,7 +112,12 @@
 }
 
 .logo {
-    &__menu {}
+    &__menu {
+        width: 100px;
+        height: 65px;
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 .dropdown {
@@ -125,52 +131,104 @@
     }
 }
 
-
-
 .intro {
     display: flex;
-    align-items: center;
+    align-items: end;
     background-image: url('../images/icons/blue_bg.svg');
+    // background: linear-gradient(113.28deg, #1A47EA 3.44%, #82E9FF 96.25%);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     color: $white;
+    position: relative;
+    z-index: 4;
 
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 195px;
+        width: 100%;
+        background-image: url('../images/icons/snow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 15%;
+        right: 0;
+        height: 661px;
+        width: 1048px;
+        background-image: url('../images/car.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__wrapper {
+        position: relative;
+        width: 100%;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 3%;
+            left: 57%;
+            transform: translateX(-50%);
+            height: 66px;
+            width: 100px;
+            background-image: url('../images/icons/ribbon.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
 
     &__box {
         max-width: 750px;
         margin-left: 10%;
-        // position: relative;
-
-        // &::before {
-        //     content: "";
-        //     position: absolute;
-        //     // left: 862px;
-        //     left: 0%;
-        //     top: 131px;
-        //     height: 661px;
-        //     width: 1048px;
-        //     background-image: url('../images/car.png');
-        //     background-repeat: no-repeat;
-        //     background-position: center;
-        //     background-size: cover;
-        // }
+        z-index: 1;
     }
 
     &__info {
-        margin-left: 20%;
+        margin-left: 14%;
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+        // background-color: $white;
     }
 
     &__title {
         font-weight: 800;
         font-size: 55px;
-
         text-transform: uppercase;
         margin-bottom: 60px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -13px;
+            left: -22px;
+            height: 45px;
+            width: 45px;
+            background-image: url('../images/icons/equals.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
     }
 
-    &__svg {}
+    &__svg {
+        margin: 0 5px;
+    }
 
     &__text {
         font-weight: 600;
@@ -184,13 +242,20 @@
         }
     }
 
-    &__img {}
+    &__links {
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        z-index: 30;
+    }
 }
 
 
 
 .links {
-    margin-bottom: 30px;
+    z-index: 1;
+
     &__link {
         background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
         box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
@@ -200,6 +265,7 @@
         transition: color 0.5s;
         display: inline-flex;
         align-items: center;
+        color: $white;
 
         &:focus {
             color: $focus;
@@ -217,22 +283,48 @@
     &__svg {
         margin-left: 35px;
     }
+
+    &__video {
+        padding: 23px 38px;
+    }
 }
 
+.mask {
+    overflow: hidden;
+}
 
+.roundedCorners {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
 
-
-
+.gradient {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='red', endColorstr='green', GradientType=0);
+    /* IE6-9 */
+}
 
 .video {
     // background: linear-gradient(113.71deg, #A9EAFF 12.56%, #6CFFFF 85.62%);
     border-radius: 5px;
     // border: 1px solid $slider-Station;
-    padding: 19px 38px;
+
     border: 1px solid skyblue;
     border-image: linear-gradient(113.71deg, #A9EAFF 12.56%, #6CFFFF 85.62%);
     border-image-slice: 1;
     transition: color 0.5s;
+    font-weight: 600;
+    /* identical to box height */
+    color: #FFFFFF;
+
+    &__text {
+        margin-right: 15px;
+    }
+
+    // еще и бордер радиус не работает
+    // &__svg {
+    //     margin-right: 15px;
+    // }
 
     &:focus {
         color: $focus;
@@ -249,12 +341,153 @@
 
 
 
+.functions {
+    background-color: #F5F9FF;
+    padding: 15px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__slider {}
+
+    &__box {
+        max-width: 650px;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 45px;
+        color: #2E3A59;
+        text-align: center;
+        margin-bottom: 25px;
+        position: relative;
+        text-transform: uppercase;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -37%;
+            right: 17%;
+            height: 40px;
+            width: 40px;
+            background-image: url('../images/icons/strip.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -26%;
+            left: 19%;
+            height: 40px;
+            width: 40px;
+            background-image: url('../images/icons/strip.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        text-align: center;
+        color: #828282;
+        margin-bottom: 60px;
+        max-width: 500px;
+    }
+
+    &__items {
+        margin-bottom: 60px;
+        // max-width: 540px;
+    }
+
+    &__item {
+        margin-bottom: 50px;
+    }
+
+    &__item span {
+        font-weight: 700;
+        color: #2E3A59;
+    }
+
+    &__info {
+        padding: 30px 24px;
+        // background: $white;
+        // border: 1px solid silver;
+        box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.04);
+        border-radius: 5px;
+        margin-bottom: 60px;
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        // font-size: 18px;
+        // line-height: 22px;
+        /* identical to box height */
+        text-align: center;
+        color: #828282;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__svg {
+        margin-right: 15px;
+    }
+
+    &__video {
+        padding: 18px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF3B3B;
+
+    }
+}
 
 
+.product-tabs {}
 
+.product-tabs__item-top {}
 
+.product-tabs__link {}
 
+.product-tabs__link--active {}
 
+.product-tabs__link--information {}
+
+.product-tabs__content {}
+
+.product-tabs__text {}
+
+.product-tabs__text--active {}
+
+.swiper-functions {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-pagination {}
+
+.about {}
+
+.about__title {}
+
+.swiper-about {}
+
+.swiper-slide__box {}
+
+.swiper-slide__title {}
+
+.swiper-slide__text {}
 
 
 
@@ -265,6 +498,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        gap: 15px;
 
         @media (max-width: 992px) {
             margin: 0 auto 50px;
@@ -280,18 +514,25 @@
     }
 
     &__link {
-        padding: 15px 70px 15px 70px;
-        background-color: white;
+        background-color: $white;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
         border-radius: 5px;
+        color: #AAAAAA;
+        padding: 17px 33px;
+
+
         transition: background-color 0.4s;
         letter-spacing: 1.1px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        display: inline-block;
+        // display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         max-width: 320px;
-        margin-right: 15px;
-        margin-left: 15px;
+        // margin-right: 15px;
+        // margin-left: 15px;
 
         @media (max-width: 992px) {
             padding: 15px 50px 15px 50px;
@@ -319,8 +560,28 @@
         }
 
         &--active {
-            background-color: blue;
+            background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+            color: $white;
+            // fill: white;
+
+            // svg use {}
+
+            // path {
+            //     fill: white;
+            // }
+            path {
+                fill: $white;
+            }
+
+            // svg path {
+            //     fill: white;
+            // }
+
         }
+    }
+
+    &__svg {
+        margin-right: 15px;
     }
 
     &__text {

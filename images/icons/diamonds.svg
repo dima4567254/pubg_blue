@@ -1,5 +1,32 @@
-<svg width="60" height="59" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.561 27.3939L12.7419 6.26172L32.7646 26.2169L11.561 27.3939Z" fill="#04FFFF"/>
-<path d="M32.561 26.5457L33.8561 5.29979L53.8788 25.255L32.561 26.5457Z" fill="white"/>
-<path d="M31.0082 47.3233L32.229 26.1514L52.2517 46.1067L31.0082 47.3233Z" fill="#FF9B05"/>
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <!-- <rect fill="#fff" id="canvas_background" height="42" width="42" y="-1" x="-1"/> -->
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+  <g stroke="null" id="svg_51">
+   <g stroke="null" transform="matrix(1.0583065536307916,0,0,1.033614229893388,-1.0074945278402083,0) " id="svg_48">
+    <title stroke="null" transform="translate(0.9674789309501648,0) translate(-7.358551812330916e-8,0) translate(0.9674789309501648,0) translate(-0.39983272552490234,0) translate(-0.1853061318397522,0) translate(0,-0.30159279704093933) ">background</title>
+    <!-- <rect fill="#fff" id="canvas_background" height="40" width="40" y="-1" x="-1"/> -->
+    <g stroke="null" id="svg_46" display="none">
+     <rect stroke="null" id="svg_49" width="40" height="40" x="1.349819" y="-0.301593" stroke-width="0" fill="url(#gridpattern)"/>
+    </g>
+   </g>
+   <g stroke="null" transform="matrix(1.0583065536307916,0,0,1.033614229893388,-1.0074945278402083,0) " id="svg_50">
+    <title stroke="null" transform="translate(0.9674789309501648,0) translate(-7.358551812330916e-8,0) translate(0.9674789309501648,0) translate(-0.39983272552490234,0) translate(-0.1853061318397522,0) translate(0,-0.30159279704093933) ">Layer 1</title>
+    <g stroke="null" id="svg_42">
+     <path stroke="null" d="m0.967479,20.356977l1.11162,-19.67293l18.8477,18.57731l-19.95932,1.09562z" fill="#04FFFF" id="svg_45"/>
+     <path stroke="null" d="m20.735109,19.567547l1.21912,-19.77884l18.8477,18.5773l-20.06681,1.20154l-0.00001,0z" fill="white" id="svg_44"/>
+     <path stroke="null" d="m19.273449,38.910447l1.14914,-19.71l18.8477,18.57728l-19.99684,1.13272z" fill="#FF9B05" id="svg_43"/>
+    </g>
+   </g>
+  </g>
+ </g>
 </svg>
