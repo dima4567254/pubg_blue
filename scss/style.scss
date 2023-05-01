@@ -259,13 +259,14 @@
     &__link {
         background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
         box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
-        border-radius: 5px;
-        padding: 20px 50px;
+        // border-radius: 5px;
+        padding: 20px;
         margin-right: 35px;
         transition: color 0.5s;
         display: inline-flex;
         align-items: center;
         color: $white;
+        max-width: 220px;
 
         &:focus {
             color: $focus;
@@ -288,7 +289,8 @@
         padding: 23px 38px;
     }
 }
-
+// --------------------------------------
+// градиент
 .mask {
     overflow: hidden;
 }
@@ -303,7 +305,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='red', endColorstr='green', GradientType=0);
     /* IE6-9 */
 }
-
+// --------------------------------------
 .video {
     // background: linear-gradient(113.71deg, #A9EAFF 12.56%, #6CFFFF 85.62%);
     border-radius: 5px;
@@ -339,26 +341,35 @@
     }
 }
 
-
-
 .functions {
     background-color: #F5F9FF;
-    padding: 15px;
+    padding-top: 25px;
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
     }
 
-    &__slider {}
+    &__slider {
+        width: 100%;
+    }
+
+    // &__swipers {
+    //     padding-top: 150px;
+    //     max-width: 300px;
+    //     // найти и удалить
+    // }
+
+    &__swiper {
+        padding-top: 150px;
+        max-width: 300px;
+    }
 
     &__box {
         max-width: 650px;
     }
 
     &__title {
-        font-weight: 800;
-        font-size: 45px;
         color: #2E3A59;
         text-align: center;
         margin-bottom: 25px;
@@ -368,8 +379,8 @@
         &::before {
             content: "";
             position: absolute;
-            bottom: -37%;
-            right: 17%;
+            bottom: -7%;
+            right: 15%;
             height: 40px;
             width: 40px;
             background-image: url('../images/icons/strip.svg');
@@ -381,8 +392,8 @@
         &::after {
             content: "";
             position: absolute;
-            top: -26%;
-            left: 19%;
+            top: 0%;
+            left: 16%;
             height: 40px;
             width: 40px;
             background-image: url('../images/icons/strip.svg');
@@ -438,6 +449,10 @@
         justify-content: center;
     }
 
+    // &__link {
+    //     max-width: 200px;
+    // }
+
     &__svg {
         margin-right: 15px;
     }
@@ -452,36 +467,119 @@
     }
 }
 
+.swiper-slide-img {
+    width: 300px;
+    height: 585px;
+    object-fit: cover;
+}
 
-.product-tabs {}
+// .product-tabs {}
 
-.product-tabs__item-top {}
+// .product-tabs__item-top {}
 
-.product-tabs__link {}
+// .product-tabs__link {}
 
-.product-tabs__link--active {}
+// .product-tabs__link--active {}
 
-.product-tabs__link--information {}
+// .product-tabs__link--information {}
 
-.product-tabs__content {}
+// .product-tabs__content {}
 
-.product-tabs__text {}
+// .product-tabs__text {}
 
-.product-tabs__text--active {}
+// .product-tabs__text--active {}
 
-.swiper-functions {}
+// .swiper-functions {}
+
+// .swiper-wrapper {}
+
+// .swiper-slide {}
+
+// .swiper-pagination {}
+
+// .about {}
+
+// .about__title {}
+
+
+
+
+
+.swiper-button-next {
+    top: initial;
+    bottom: 0;
+    right: 55px;
+    width: 61px;
+    height: 32px;
+}
+
+.swiper-button-prev {
+    top: initial;
+    // bottom: 0;
+    left: 125px;
+    bottom: -6px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    font-size: 27px;
+}
+
+
+.swiper-button-next::after {
+    content: "none";
+}
+
+.swiper-button-prev:after {
+    content: "none";
+}
+
+// ---------------------------------------------------------
+.about {
+    background-image: url('../images/icons/blue_bg_about.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 170px;
+
+
+    &__title {
+        color: $white;
+        margin-bottom: 80px;
+    }
+}
+
+.swiper-about {
+    padding: 85px 110px 45px 110px;
+    background: $white;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 120px;
+        width: 120px;
+        background-image: url('../images/avatar.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__box {}
+
+    &__title {}
+
+    &__text {}
+}
 
 .swiper-wrapper {}
 
 .swiper-slide {}
-
-.swiper-pagination {}
-
-.about {}
-
-.about__title {}
-
-.swiper-about {}
 
 .swiper-slide__box {}
 
@@ -489,14 +587,20 @@
 
 .swiper-slide__text {}
 
-
-
+.swiper-pagination {}
 
 .product-tabs {
+    position: relative;
+
     &__item-top {
-        margin-bottom: 60px;
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        // right: 0;
+        left: 0;
+        margin-bottom: 40px;
         display: flex;
-        justify-content: center;
+        // justify-content: start;
         flex-wrap: wrap;
         gap: 15px;
 
@@ -531,8 +635,13 @@
         justify-content: center;
         align-items: center;
         max-width: 320px;
+
         // margin-right: 15px;
         // margin-left: 15px;
+        &--active {
+            background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+            color: $white;
+        }
 
         @media (max-width: 992px) {
             padding: 15px 50px 15px 50px;

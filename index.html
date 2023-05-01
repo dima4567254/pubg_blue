@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon">
     <title>Pubg</title>
+    <link rel="stylesheet" href="css/awesome.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -18,6 +19,7 @@
 <!-- не уверен что h3  519-->
 <!-- 624 проверить может можно без флекс -->
 <!-- решил не писать ограничение текста -->
+<!-- упорядочить все бем блоки 224-->
 
 <!--.section--bem 
     .title--bem
@@ -136,10 +138,6 @@
                         <div class="product-tabs">
                             <div class="product-tabs__item-top">
                                 <a class=" product-tabs__link" href="#tab-1">
-                                    <!-- <svg class="product-tabs__svg" width="33px" height="29px" fill="#bcbcbc">
-                                        <use xlink:href="images/sprite.svg#windows">
-                                        </use>
-                                    </svg> -->
                                     <svg class="product-tabs__svg" width="40" height="40" viewBox="0 0 40 40"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -149,10 +147,6 @@
                                     Windows
                                 </a>
                                 <a class=" product-tabs__link" href="#tab-2">
-                                    <!-- <svg class="product-tabs__svg" width="33px" height="39px" fill="#AAAAAA">
-                                        <use xlink:href="images/sprite.svg#android">
-                                        </use>
-                                    </svg> -->
                                     <svg class="product-tabs__svg" width="40" height="40" viewBox="0 0 40 40"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -162,10 +156,6 @@
                                     <p>Android</p>
                                 </a>
                                 <a class="product-tabs__link product-tabs__link--active " href="#tab-3">
-                                    <!-- <svg class="product-tabs__svg" width="30px" height="40px">
-                                        <use xlink:href="images/sprite.svg#ios">
-                                        </use>
-                                    </svg> -->
                                     <svg class="product-tabs__svg" width="40" height="40" viewBox="0 0 40 40"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -179,23 +169,34 @@
                             </div>
                             <div class="product-tabs__content">
                                 <div class="product-tabs__text product-tabs__text--active" id="tab-1">
+                                    <!-- + -->
                                     <div class="functions__wrapper">
-                                        <div class="swiper">
-                                            <div class="swiper-button-next"></div>
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-wrapper">
-                                                <div class=" swiper-slide">
-                                                    <img src="images/phone.png" alt="Телефон">
+                                        <!-- + -->
+                                        <div class="functions__inner">
+                                            <div class="functions__swiper swiper">
+                                                <div class="swiper-button-next">
+                                                    <i class="icon-right-arrow" aria-hidden="true">
+                                                    </i>
                                                 </div>
-                                                <div class="swiper-slide">
-                                                    <img src="images/phone.png" alt="Телефон">
+                                                <div class="swiper-button-prev">
+                                                    <i class="icon-left_arrow" aria-hidden="true">
+                                                    </i>
+                                                </div>
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img class="swiper-slide-img" src="images/phone.png"
+                                                            alt="Телефон">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img class="swiper-slide-img" src="images/phone.png"
+                                                            alt="Телефон">
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="swiper-pagination"></div>
                                         </div>
                                         <div class="functions__box">
-                                            <h2 class="functions__title">
-                                                Функціонал
+                                            <h2 class="functions__title title">
+                                                Функціонал1
                                             </h2>
                                             <div class="functions__text">
                                                 <p>
@@ -264,89 +265,206 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                                 <div class="product-tabs__text" id="tab-2">
-                                    <p>
-                                        content2
-                                    </p>
+                                    <!-- + -->
+                                    <div class="functions__wrapper">
+                                        <!-- + -->
+                                        <div class="functions__inner">
+                                            <div class="functions__swiper swiper">
+                                                <div class="swiper-button-next">
+                                                    <i class="icon-right-arrow" aria-hidden="true">
+                                                    </i>
+                                                </div>
+                                                <div class="swiper-button-prev">
+                                                    <i class="icon-left_arrow" aria-hidden="true">
+                                                    </i>
+                                                </div>
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img class="swiper-slide-img" src="images/phone.png"
+                                                            alt="Телефон">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img class="swiper-slide-img" src="images/phone.png"
+                                                            alt="Телефон">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="functions__box">
+                                            <h2 class="functions__title title">
+                                                Функціонал2
+                                            </h2>
+                                            <div class="functions__text">
+                                                <p>
+                                                    Унікальний чит на iOS підійде для всіх пристроїв
+                                                    починаючи від айфону 4S+.
+                                                </p>
+                                            </div>
+                                            <ul class="functions__items">
+                                                <li class="functions__item">
+                                                    <svg class="social__svg" width="10px" height="10px">
+                                                        <use xlink:href="images/sprite.svg#rhombus">
+                                                        </use>
+                                                    </svg>
+                                                    <span>WallHack</span> - виявляє супротивників крізь стіни.
+                                                </li>
+                                                <li class="functions__item">
+                                                    <svg class="social__svg" width="10px" height="10px">
+                                                        <use xlink:href="images/sprite.svg#rhombus">
+                                                        </use>
+                                                    </svg>
+                                                    <span>AntiRecoil</span> – відключає віддачу на будь-якій зброї.
+                                                </li>
+                                                <li class="functions__item">
+                                                    <svg class="social__svg" width="10px" height="10px">
+                                                        <use xlink:href="images/sprite.svg#rhombus">
+                                                        </use>
+                                                    </svg>
+                                                    <span>Aimbot</span> – автоматично наводить приціл на противника.
+                                                </li>
+                                                <li class="functions__item">
+                                                    <svg class="social__svg" width="10px" height="10px">
+                                                        <use xlink:href="images/sprite.svg#rhombus">
+                                                        </use>
+                                                    </svg>
+                                                    <span>Drop</span> – показує топові речі крізь стіни.
+                                                </li>
+                                            </ul>
+                                            <div class="functions__info">
+                                                <svg class="functions__svg" width="32px" height="28px">
+                                                    <use xlink:href="images/sprite.svg#attention">
+                                                    </use>
+                                                </svg>
+                                                <span>
+                                                    Рекомендуем, оставить стандартные параметры в чите
+                                                </span>
+                                            </div>
+                                            <div class="functions__links links">
+                                                <a class="links__link link" href="#">
+                                                    Придбати
+                                                    <svg class="links__svg" width="54px" height="30px">
+                                                        <use xlink:href="images/sprite.svg#right-arrow">
+                                                        </use>
+                                                    </svg>
+                                                </a>
+                                                <a class="functions__video video" data-fancybox
+                                                    style="background-image: url('images/video-bg.jpg')"
+                                                    href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
+                                                    <span class="video__text">
+                                                        Подивитись відео
+                                                    </span>
+                                                    <svg class="video__svg" width="33px" height="33px">
+                                                        <use xlink:href="images/sprite.svg#play">
+                                                        </use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="product-tabs__text" id="tab-3">
-                                    <p>
-                                        content3
-                                    </p>
+                                    <!-- + -->
+                                    <div class="functions__wrapper">
+                                        <!-- + -->
+                                        <div class="functions__inner">
+                                            <div class="functions__swiper swiper">
+                                                <div class="swiper-button-next">
+                                                    <i class="icon-right-arrow" aria-hidden="true">
+                                                    </i>
+                                                </div>
+                                                <div class="swiper-button-prev">
+                                                    <i class="icon-left_arrow" aria-hidden="true">
+                                                    </i>
+                                                </div>
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <img class="swiper-slide-img" src="images/phone.png"
+                                                            alt="Телефон">
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <img class="swiper-slide-img" src="images/phone.png"
+                                                            alt="Телефон">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="functions__box">
+                                            <h2 class="functions__title title">
+                                                Функціонал3
+                                            </h2>
+                                            <div class="functions__text">
+                                                <p>
+                                                    Унікальний чит на iOS підійде для всіх пристроїв
+                                                    починаючи від айфону 4S+.
+                                                </p>
+                                            </div>
+                                            <ul class="functions__items">
+                                                <li class="functions__item">
+                                                    <svg class="social__svg" width="10px" height="10px">
+                                                        <use xlink:href="images/sprite.svg#rhombus">
+                                                        </use>
+                                                    </svg>
+                                                    <span>WallHack</span> - виявляє супротивників крізь стіни.
+                                                </li>
+                                                <li class="functions__item">
+                                                    <svg class="social__svg" width="10px" height="10px">
+                                                        <use xlink:href="images/sprite.svg#rhombus">
+                                                        </use>
+                                                    </svg>
+                                                    <span>AntiRecoil</span> – відключає віддачу на будь-якій
+                                                    зброї.
+                                                </li>
+                                                <li class="functions__item">
+                                                    <svg class="social__svg" width="10px" height="10px">
+                                                        <use xlink:href="images/sprite.svg#rhombus">
+                                                        </use>
+                                                    </svg>
+                                                    <span>Aimbot</span> – автоматично наводить приціл на
+                                                    противника.
+                                                </li>
+                                                <li class="functions__item">
+                                                    <svg class="social__svg" width="10px" height="10px">
+                                                        <use xlink:href="images/sprite.svg#rhombus">
+                                                        </use>
+                                                    </svg>
+                                                    <span>Drop</span> – показує топові речі крізь стіни.
+                                                </li>
+                                            </ul>
+                                            <div class="functions__info">
+                                                <svg class="functions__svg" width="32px" height="28px">
+                                                    <use xlink:href="images/sprite.svg#attention">
+                                                    </use>
+                                                </svg>
+                                                <span>
+                                                    Рекомендуем, оставить стандартные параметры в чите
+                                                </span>
+                                            </div>
+                                            <div class="functions__links links">
+                                                <a class="links__link link" href="#">
+                                                    Придбати
+                                                    <svg class="links__svg" width="54px" height="30px">
+                                                        <use xlink:href="images/sprite.svg#right-arrow">
+                                                        </use>
+                                                    </svg>
+                                                </a>
+                                                <a class="functions__video video" data-fancybox
+                                                    style="background-image: url('images/video-bg.jpg')"
+                                                    href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
+                                                    <span class="video__text">
+                                                        Подивитись відео
+                                                    </span>
+                                                    <svg class="video__svg" width="33px" height="33px">
+                                                        <use xlink:href="images/sprite.svg#play">
+                                                        </use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="functions__box">
-                        <h2 class="functions__title">
-                            Функціонал
-                        </h2>
-                        <div class="functions__text">
-                            <p>
-                                Унікальний чит на iOS підійде для всіх пристроїв
-                                починаючи від айфону 4S+.
-                            </p>
-                        </div>
-                        <ul class="functions__items">
-                            <li class="functions__item">
-                                <svg class="social__svg" width="10px" height="10px">
-                                    <use xlink:href="images/sprite.svg#rhombus">
-                                    </use>
-                                </svg>
-                                <span>WallHack</span> - виявляє супротивників крізь стіни.
-                            </li>
-                            <li class="functions__item">
-                                <svg class="social__svg" width="10px" height="10px">
-                                    <use xlink:href="images/sprite.svg#rhombus">
-                                    </use>
-                                </svg>
-                                <span>AntiRecoil</span> – відключає віддачу на будь-якій зброї.
-                            </li>
-                            <li class="functions__item">
-                                <svg class="social__svg" width="10px" height="10px">
-                                    <use xlink:href="images/sprite.svg#rhombus">
-                                    </use>
-                                </svg>
-                                <span>Aimbot</span> – автоматично наводить приціл на противника.
-                            </li>
-                            <li class="functions__item">
-                                <svg class="social__svg" width="10px" height="10px">
-                                    <use xlink:href="images/sprite.svg#rhombus">
-                                    </use>
-                                </svg>
-                                <span>Drop</span> – показує топові речі крізь стіни.
-                            </li>
-                        </ul>
-                        <div class="functions__info">
-                            <svg class="functions__svg" width="32px" height="28px">
-                                <use xlink:href="images/sprite.svg#attention">
-                                </use>
-                            </svg>
-                            <span>
-                                Рекомендуем, оставить стандартные параметры в чите
-                            </span>
-                        </div>
-                        <div class="functions__links links">
-                            <a class="links__link link" href="#">
-                                Придбати
-                                <svg class="links__svg" width="54px" height="30px">
-                                    <use xlink:href="images/sprite.svg#right-arrow">
-                                    </use>
-                                </svg>
-                            </a>
-                            <a class="functions__video video" data-fancybox
-                                style="background-image: url('images/video-bg.jpg')"
-                                href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
-                                <span class="video__text">
-                                    Подивитись відео
-                                </span>
-                                <svg class="video__svg" width="33px" height="33px">
-                                    <use xlink:href="images/sprite.svg#play">
-                                    </use>
-                                </svg>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -354,15 +472,14 @@
         </section>
 
         <section class="about">
-            <div class="container">
-                <h2 class="about__title">
+            <div class="container container--sm">
+                <h2 class="about__title title">
                     що кажуть про нас
                 </h2>
-
-                <div class="swiper-about">
+                <div class="swiper-about swiperAbout">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="swiper-slide__box">
+                            <div class="swiper-about__box">
                                 <h3 class="swiper-slide__title">
                                     Егор Черняев
                                 </h3>
@@ -376,266 +493,12 @@
                             </div>
                         </div>
                         <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
-                        <div class="swiper-slide">Slide 4</div>
-                        <div class="swiper-slide">Slide 5</div>
-                        <div class="swiper-slide">Slide 6</div>
-                        <div class="swiper-slide">Slide 7</div>
-                        <div class="swiper-slide">Slide 8</div>
-                        <div class="swiper-slide">Slide 9</div>
-                        <div class="swiper-slide">Slide 10</div>
                     </div>
                     <div class="swiper-pagination"></div>
-
                 </div>
         </section>
 
-        <section class="rates">
-            <div class="container">
-                <h2 class="rates__title">
-                    тарифы
-                </h2>
-                <div class="product-tabs">
-                    <div class="product-tabs__item-top">
-                        <a class=" product-tabs__link  product-tabs__link--active" href="#tab-1">
-                            Windows
-                        </a>
-                        <a class=" product-tabs__link  product-tabs__link--information" href="#tab-2">
-                            Android
-                        </a>
-                        <a class="product-tabs__link" href="#tab-3">
-                            iOS
-                        </a>
-                    </div>
-                    <div class="product-tabs__content">
-                        <div class="product-tabs__text product-tabs__text--active" id="tab-1">
-                            <p>
-                                content1
-                            </p>
-                        </div>
-                        <div class="product-tabs__text" id="tab-2">
-                            <p>
-                                content2
-                            </p>
-                        </div>
-                        <div class="product-tabs__text" id="tab-3">
-                            <p>
-                                content3
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <ul class="rates__list">
-                    <li class="rates__wrapper">
-                        <h3 class="rates__title rates__title--regular">
-                            обычная
-                        </h3>
-                        <div class="rates__info">
-                            1 месяц
-                        </div>
-                        <ul class="rates__items">
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Весь функціонал читає
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Оновлення 1 раз на місяць
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Весь функціонал читає + NEW
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Анті-Бан
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#close_big">
-                                    </use>
-                                </svg>
-                                Поліпшена оптимізація
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#close_big">
-                                    </use>
-                                </svg>
-                                Запуск на інших телефонах
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#close_big">
-                                    </use>
-                                </svg>
-                                dpi+, asn, skk
-                            </li>
-                        </ul>
-                        <div class="rates__price">
-                            649<span>₽</span>
-                        </div>
-                        <a class="rates__link" href="#">
-                            Придбати
-                            <svg class="social__svg" width="44px" height="24px" fill="#FFFFFF">
-                                <use xlink:href="images/sprite.svg#right arrow">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="rates__wrapper">
-                        <h3 class="rates__title rates__title--standard">
-                            стандартная
-                        </h3>
-                        <div class="rates__info">
-                            3 месяц
-                        </div>
-                        <ul class="rates__items">
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Весь функціонал читає
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Постійні оновлення
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Підтримка 24/7
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Покращений Анти-Бан
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Поліпшена оптимізація
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Запуск на інших телефонах
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#close_big">
-                                    </use>
-                                </svg>
-                                dpi+, asn, skk
-                            </li>
-                        </ul>
-                        <div class="rates__price">
-                            1 499<span>₽</span>
-                        </div>
-                        <a class="rates__link" href="#">
-                            Придбати
-                            <svg class="social__svg" width="44px" height="24px">
-                                <use xlink:href="images/sprite.svg#close_big">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="rates__wrapper">
-                        <h3 class="rates__title rates__title--version">
-                            pro версія
-                        </h3>
-                        <div class="rates__info">
-                            Назавжди
-                        </div>
-                        <ul class="rates__items">
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Весь функціонал читає + NEW
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Всі оновлення + BETA тест
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Підтримка 24/7
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Найпотужніший Анті-Бан
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Максимальна оптимізація
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Запуск на інших телефонах
-                            </li>
-                            <li class="rates__item">
-                                <svg class="social__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                dpi+, asn, skk
-                            </li>
-                        </ul>
-                        <div class="rates__price">
-                            2 899<span>₽</span>
-                        </div>
-                        <a class="rates__link" href="#">
-                            Придбати
-                            <svg class="social__svg" width="23px" height="18px">
-                                <use xlink:href="images/sprite.svg#ready">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+
 
         <section class="questions">
             <div class="container">

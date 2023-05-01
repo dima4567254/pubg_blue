@@ -32,8 +32,9 @@ body {
     max-width: 1350px;
     margin: 0 auto;
     padding: 0 15px;
-    &-sm {
-        
+
+    &--sm {
+        max-width: 825px;
     }
 }
 
@@ -42,11 +43,9 @@ body {
 }
 
 .title {
-    // font-size: 36px;
-    // text-align: center;
-    // letter-spacing: 0.04em;
-    // text-transform: uppercase;
-    // color: $black3;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 55px;
 
     @media (max-width: 1200px) {
         font-size: 34px;

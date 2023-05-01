@@ -2,13 +2,34 @@ $(function name(params) {
 
     $('.product-tabs__link').on('click', function (e) {
         e.preventDefault();
+
         $('.product-tabs__link').removeClass('product-tabs__link--active');
         $(this).addClass('product-tabs__link--active');
 
         $('.product-tabs__text').removeClass('product-tabs__text--active');
         $($(this).attr('href')).addClass('product-tabs__text--active'); /*убирает добовляет класс*/
         // табы
+        // product-tabs__text--active
+
+
     });
+
+    // $('.product-tabs__link').on('click', function () {
+    //     $('.product-tabs__link').toggleClass('product-tabs__link--active');
+    //     $('.product-tabs__text').toggleClass('product-tabs__text--active');
+    //     // для крестика и для меню и что бы закрывалось меню после выбора сcылки
+    // });
+
+    // $('.product-tabs__link').on('click', function (e) {
+    //     e.preventDefault();
+    //     $('.product-tabs__link').removeClass('product-tabs__link--active');
+    //     $(this).addClass('product-tabs__link--active');
+
+    //     $('.product-tabs__text').removeClass('product-tabs__text--active');
+    //     $($(this).attr('href')).addClass('product-tabs__text--active'); /*убирает добовляет класс*/
+    //     // табы
+    //     // product-tabs__text--active
+    // });
 
     setTimeout(function () {
         $('select,filter-selects__sort').styler();
@@ -29,6 +50,22 @@ $(function name(params) {
             prevEl: ".swiper-button-prev",
         },
     });
+
+    // const swiperAbout = new Swiper('.swiper-about', {
+    //     // slidesPerView: 1,
+    //     // loop: true,
+    //     // loopedslides: 1,
+    //     // slidesPerView: 2,
+    //     // grid: {
+    //     //     rows: 2,
+    //     // },
+    //     navigation: {
+    //         nextEl: ".swiper-button-next",
+    //         prevEl: ".swiper-button-prev",
+    //     },
+    // });
+
+
 
     /*	$(".menu a").on("click", function (event) {
             event.preventDefault();
