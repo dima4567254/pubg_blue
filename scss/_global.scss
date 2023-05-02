@@ -35,6 +35,7 @@ body {
 
     &--sm {
         max-width: 825px;
+        // overflow: hidden;
     }
 }
 
@@ -46,6 +47,8 @@ body {
     font-weight: 800;
     font-size: 45px;
     line-height: 55px;
+    text-align: center;
+    text-transform: uppercase;
 
     @media (max-width: 1200px) {
         font-size: 34px;

@@ -46,24 +46,24 @@ $(function name(params) {
         //     rows: 2,
         // },
         navigation: {
+            nextEl: ".swiper-next",
+            prevEl: ".swiper-prev",
+        },
+    });
+
+    const swiperAbout = new Swiper('.swiperAbout', {
+        // slidesPerView: 1,
+        // loop: true,
+        // loopedslides: 1,
+        // slidesPerView: 2,
+        // grid: {
+        //     rows: 2,
+        // },
+        navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
     });
-
-    // const swiperAbout = new Swiper('.swiper-about', {
-    //     // slidesPerView: 1,
-    //     // loop: true,
-    //     // loopedslides: 1,
-    //     // slidesPerView: 2,
-    //     // grid: {
-    //     //     rows: 2,
-    //     // },
-    //     navigation: {
-    //         nextEl: ".swiper-button-next",
-    //         prevEl: ".swiper-button-prev",
-    //     },
-    // });
 
 
 
