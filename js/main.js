@@ -64,6 +64,7 @@ $(function name(params) {
             prevEl: ".swiper-button-prev",
         },
     });
+//   !!! сделать бесконечный слайдер
 
 
 

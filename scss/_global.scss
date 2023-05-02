@@ -10,6 +10,7 @@ body {
     line-height: 1.2;
     color: $default;
     letter-spacing: 0.6px;
+    background: #F5F9FF;
 }
 
 .sr-only {
@@ -49,6 +50,7 @@ body {
     line-height: 55px;
     text-align: center;
     text-transform: uppercase;
+    color: $title;
 
     @media (max-width: 1200px) {
         font-size: 34px;
