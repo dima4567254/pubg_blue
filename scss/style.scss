@@ -790,7 +790,27 @@
         letter-spacing: 0px;
         min-height: 200px;
 
+        &.product-tabs__text--rates-active {
+            display: block;
+        }
+
         &.product-tabs__text--active {
+            display: block;
+        }
+    }
+
+    &__texts {
+        display: none;
+        line-height: 1.8;
+        font-weight: 400;
+        letter-spacing: 0px;
+        min-height: 200px;
+
+        &.product-tabs__texts--rates-active {
+            display: block;
+        }
+
+        &.product-tabs__texts--active {
             display: block;
         }
     }
@@ -986,10 +1006,13 @@ option {
         // box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
         // border-radius: 5px 55px;
         margin-bottom: 25px;
+        padding: 0px 40px;
     }
 
     &__item {
-        padding: 0px 50px;
+
+        display: flex;
+        align-items: center;
 
         &:not(:last-child) {
             margin-bottom: 25px;
@@ -997,6 +1020,10 @@ option {
 
         font-weight: 400;
         color: $title;
+    }
+
+    &__svg {
+        margin-right: 10px;
     }
 
     &__price {

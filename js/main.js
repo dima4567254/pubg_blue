@@ -10,8 +10,18 @@ $(function name(params) {
         $($(this).attr('href')).addClass('product-tabs__text--active'); /*убирает добовляет класс*/
         // табы
         // product-tabs__text--active
+    });
 
+    $('.product-tabs__links').on('click', function (e) {
+        e.preventDefault();
 
+        $('.product-tabs__links').removeClass('product-tabs__links--active');
+        $(this).addClass('product-tabs__links--active');
+
+        $('.product-tabs__texts').removeClass('product-tabs__texts--active');
+        $($(this).attr('href')).addClass('product-tabs__texts--active'); /*убирает добовляет класс*/
+        // табы
+        // product-tabs__text--active
     });
 
     // $('.product-tabs__link').on('click', function () {

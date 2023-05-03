@@ -181,6 +181,7 @@
                                                     <div class="swiper-slide">
                                                         <img class="swiper-slide-img" src="images/phone.png"
                                                             alt="Телефон">
+                                                            <!-- перевырезать картинку и поправить что бы по середине была -->
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <img class="swiper-slide-img" src="images/phone.png"
@@ -341,7 +342,7 @@
                                         </div>
                                         <div class="functions__box">
                                             <h2 class="functions__title title">
-                                                Функціонал1
+                                                Функціонал2
                                             </h2>
                                             <div class="functions__text">
                                                 <p>
@@ -460,7 +461,7 @@
                                         </div>
                                         <div class="functions__box">
                                             <h2 class="functions__title title">
-                                                Функціонал1
+                                                Функціонал3
                                             </h2>
                                             <div class="functions__text">
                                                 <p>
@@ -596,245 +597,654 @@
                         тарифы
                     </h2>
                 </div>
-                <div class="rates__tabs product-tabs">
-                    <div class="product-tabs__item-top">
-                        <a class="product-tabs__link product-tabs__link--active" href="#tab-4">
+                <div class="rates-tabs product-tabs">
+                    <div class="product-tabs__content">
+                        <div class="product-tabs__item-top">
+                        <a class="product-tabs__links" href="#tab-4">
                             Windows
                         </a>
-                        <a class=" product-tabs__link product-tabs__link--information" href="#tab-5">
+                        <a class=" product-tabs__links" href="#tab-5">
                             Android
                         </a>
-                        <a class="product-tabs__link" href="#tab-6">
+                        <a class="product-tabs__links product-tabs__links--active" href="#tab-6">
                             iOS
                         </a>
                     </div>
-                    <div class="product-tabs__content">
-                        <!-- <div class="product-tabs__text product-tabs__text--active" id="tab-4">
-                            <p>
-                                content1
-                            </p>
+                        <div class="product-tabs__texts product-tabs__texts--active" id="tab-4">
+                            <ul class="rates__list">
+                                <li class="rates__wrapper">
+                                    <h3 class="rates__subtitle rates__title--regular">
+                                        обычная1
+                                    </h3>
+                                    <div class="rates__info">
+                                        1 месяц
+                                    </div>
+                                    <ul class="rates__items">
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Оновлення 1 раз на місяць
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає + NEW
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Анті-Бан
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            Поліпшена оптимізація
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            Запуск на інших телефонах
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            dpi+, asn, skk
+                                        </li>
+                                    </ul>
+                                    <div class="rates__price">
+                                        649<sup> ₽</sup>
+                                    </div>
+                                    <a class="rates__link" href="#">
+                                        <span>Придбати</span>
+                                        <svg class="rates__icon" width="44px" height="24px">
+                                            <use xlink:href="images/sprite.svg#right-arrow">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="rates__wrapper">
+                                    <h3 class="rates__subtitle rates__title--standard">
+                                        стандартная
+                                    </h3>
+                                    <div class="rates__info">
+                                        3 месяц
+                                    </div>
+                                    <ul class="rates__items">
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Постійні оновлення
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Підтримка 24/7
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Покращений Анти-Бан
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Поліпшена оптимізація
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Запуск на інших телефонах
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            dpi+, asn, skk
+                                        </li>
+                                    </ul>
+                                    <div class="rates__price">
+                                        1 499<sup> ₽</sup>
+                                    </div>
+                                    <a class="rates__link" href="#">
+                                        <span>Придбати</span>
+                                        <svg class="rates__icon" width="44px" height="24px">
+                                            <use xlink:href="images/sprite.svg#right-arrow">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="rates__wrapper">
+                                    <h3 class="rates__subtitle rates__title--version">
+                                        pro версія
+                                    </h3>
+                                    <div class="rates__info">
+                                        Назавжди
+                                    </div>
+                                    <ul class="rates__items">
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає + NEW
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Всі оновлення + BETA тест
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Підтримка 24/7
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Найпотужніший Анті-Бан
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Максимальна оптимізація
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Запуск на інших телефонах
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            dpi+, asn, skk
+                                        </li>
+                                    </ul>
+                                    <div class="rates__price">
+                                        2 899<sup> ₽</sup>
+                                    </div>
+                                    <a class="rates__link" href="#">
+                                        <span>Придбати</span>
+                                        <svg class="rates__icon" width="44px" height="24px">
+                                            <use xlink:href="images/sprite.svg#right-arrow">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="product-tabs__text" id="tab-5">
-                            <p>
-                                content2
-                            </p>
+                        <div class="product-tabs__texts" id="tab-5">
+                            <ul class="rates__list">
+                                <li class="rates__wrapper">
+                                    <h3 class="rates__subtitle rates__title--regular">
+                                        обычная2
+                                    </h3>
+                                    <div class="rates__info">
+                                        1 месяц
+                                    </div>
+                                    <ul class="rates__items">
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Оновлення 1 раз на місяць
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає + NEW
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Анті-Бан
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            Поліпшена оптимізація
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            Запуск на інших телефонах
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            dpi+, asn, skk
+                                        </li>
+                                    </ul>
+                                    <div class="rates__price">
+                                        649<sup> ₽</sup>
+                                    </div>
+                                    <a class="rates__link" href="#">
+                                        <span>Придбати</span>
+                                        <svg class="rates__icon" width="44px" height="24px">
+                                            <use xlink:href="images/sprite.svg#right-arrow">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="rates__wrapper">
+                                    <h3 class="rates__subtitle rates__title--standard">
+                                        стандартная
+                                    </h3>
+                                    <div class="rates__info">
+                                        3 месяц
+                                    </div>
+                                    <ul class="rates__items">
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Постійні оновлення
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Підтримка 24/7
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Покращений Анти-Бан
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Поліпшена оптимізація
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Запуск на інших телефонах
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            dpi+, asn, skk
+                                        </li>
+                                    </ul>
+                                    <div class="rates__price">
+                                        1 499<sup> ₽</sup>
+                                    </div>
+                                    <a class="rates__link" href="#">
+                                        <span>Придбати</span>
+                                        <svg class="rates__icon" width="44px" height="24px">
+                                            <use xlink:href="images/sprite.svg#right-arrow">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="rates__wrapper">
+                                    <h3 class="rates__subtitle rates__title--version">
+                                        pro версія
+                                    </h3>
+                                    <div class="rates__info">
+                                        Назавжди
+                                    </div>
+                                    <ul class="rates__items">
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає + NEW
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Всі оновлення + BETA тест
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Підтримка 24/7
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Найпотужніший Анті-Бан
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Максимальна оптимізація
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Запуск на інших телефонах
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            dpi+, asn, skk
+                                        </li>
+                                    </ul>
+                                    <div class="rates__price">
+                                        2 899<sup> ₽</sup>
+                                    </div>
+                                    <a class="rates__link" href="#">
+                                        <span>Придбати</span>
+                                        <svg class="rates__icon" width="44px" height="24px">
+                                            <use xlink:href="images/sprite.svg#right-arrow">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="product-tabs__text" id="tab-6">
-                            content3
-                        </div> -->
+                        <div class="product-tabs__texts" id="tab-6">
+                            <ul class="rates__list">
+                                <li class="rates__wrapper">
+                                    <h3 class="rates__subtitle rates__title--regular">
+                                        обычная3
+                                    </h3>
+                                    <div class="rates__info">
+                                        1 месяц
+                                    </div>
+                                    <ul class="rates__items">
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Оновлення 1 раз на місяць
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає + NEW
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Анті-Бан
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            Поліпшена оптимізація
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            Запуск на інших телефонах
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            dpi+, asn, skk
+                                        </li>
+                                    </ul>
+                                    <div class="rates__price">
+                                        649<sup> ₽</sup>
+                                    </div>
+                                    <a class="rates__link" href="#">
+                                        <span>Придбати</span>
+                                        <svg class="rates__icon" width="44px" height="24px">
+                                            <use xlink:href="images/sprite.svg#right-arrow">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="rates__wrapper">
+                                    <h3 class="rates__subtitle rates__title--standard">
+                                        стандартная
+                                    </h3>
+                                    <div class="rates__info">
+                                        3 месяц
+                                    </div>
+                                    <ul class="rates__items">
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Постійні оновлення
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Підтримка 24/7
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Покращений Анти-Бан
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Поліпшена оптимізація
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Запуск на інших телефонах
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#close_big">
+                                                </use>
+                                            </svg>
+                                            dpi+, asn, skk
+                                        </li>
+                                    </ul>
+                                    <div class="rates__price">
+                                        1 499<sup> ₽</sup>
+                                    </div>
+                                    <a class="rates__link" href="#">
+                                        <span>Придбати</span>
+                                        <svg class="rates__icon" width="44px" height="24px">
+                                            <use xlink:href="images/sprite.svg#right-arrow">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="rates__wrapper">
+                                    <h3 class="rates__subtitle rates__title--version">
+                                        pro версія
+                                    </h3>
+                                    <div class="rates__info">
+                                        Назавжди
+                                    </div>
+                                    <ul class="rates__items">
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Весь функціонал читає + NEW
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Всі оновлення + BETA тест
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Підтримка 24/7
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Найпотужніший Анті-Бан
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Максимальна оптимізація
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            Запуск на інших телефонах
+                                        </li>
+                                        <li class="rates__item">
+                                            <svg class="rates__svg" width="23px" height="18px">
+                                                <use xlink:href="images/sprite.svg#ready">
+                                                </use>
+                                            </svg>
+                                            dpi+, asn, skk
+                                        </li>
+                                    </ul>
+                                    <div class="rates__price">
+                                        2 899<sup> ₽</sup>
+                                    </div>
+                                    <a class="rates__link" href="#">
+                                        <span>Придбати</span>
+                                        <svg class="rates__icon" width="44px" height="24px">
+                                            <use xlink:href="images/sprite.svg#right-arrow">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <ul class="rates__list">
-                    <li class="rates__wrapper">
-                        <h3 class="rates__subtitle rates__title--regular">
-                            обычная
-                        </h3>
-                        <div class="rates__info">
-                            1 месяц
-                        </div>
-                        <ul class="rates__items">
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Весь функціонал читає
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Оновлення 1 раз на місяць
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Весь функціонал читає + NEW
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Анті-Бан
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#close_big">
-                                    </use>
-                                </svg>
-                                Поліпшена оптимізація
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#close_big">
-                                    </use>
-                                </svg>
-                                Запуск на інших телефонах
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#close_big">
-                                    </use>
-                                </svg>
-                                dpi+, asn, skk
-                            </li>
-                        </ul>
-                        <div class="rates__price">
-                            649<sup> ₽</sup>
-                        </div>
-                        <a class="rates__link" href="#">
-                            <span>Придбати</span>
-                            <svg class="rates__svg" width="44px" height="24px">
-                                <use xlink:href="images/sprite.svg#right-arrow">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="rates__wrapper">
-                        <h3 class="rates__subtitle rates__title--standard">
-                            стандартная
-                        </h3>
-                        <div class="rates__info">
-                            3 месяц
-                        </div>
-                        <ul class="rates__items">
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Весь функціонал читає
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Постійні оновлення
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Підтримка 24/7
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Покращений Анти-Бан
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Поліпшена оптимізація
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Запуск на інших телефонах
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#close_big">
-                                    </use>
-                                </svg>
-                                dpi+, asn, skk
-                            </li>
-                        </ul>
-                        <div class="rates__price">
-                            1 499<sup> ₽</sup>
-                        </div>
-                        <a class="rates__link" href="#">
-                            <span>Придбати</span>
-                            <svg class="rates__svg" width="44px" height="24px">
-                                <use xlink:href="images/sprite.svg#right-arrow">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="rates__wrapper">
-
-                        <h3 class="rates__subtitle rates__title--version">
-                            pro версія
-                        </h3>
-
-                        <div class="rates__info">
-                            Назавжди
-                        </div>
-                        <ul class="rates__items">
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Весь функціонал читає + NEW
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Всі оновлення + BETA тест
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Підтримка 24/7
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Найпотужніший Анті-Бан
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Максимальна оптимізація
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                Запуск на інших телефонах
-                            </li>
-                            <li class="rates__item">
-                                <svg class="rates__svg" width="23px" height="18px">
-                                    <use xlink:href="images/sprite.svg#ready">
-                                    </use>
-                                </svg>
-                                dpi+, asn, skk
-                            </li>
-                        </ul>
-                        <div class="rates__price">
-                            2 899<sup> ₽</sup>
-                        </div>
-                        <a class="rates__link" href="#">
-                            <span>Придбати</span>
-                            <svg class="rates__svg" width="44px" height="24px">
-                                <use xlink:href="images/sprite.svg#right-arrow">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </section>
 
