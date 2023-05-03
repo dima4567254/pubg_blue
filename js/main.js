@@ -12,18 +12,36 @@ $(function name(params) {
         // product-tabs__text--active
     });
 
-    $('.product-tabs__links').on('click', function (e) {
+    $('.rates-tabs__link').on('click', function (e) {
         e.preventDefault();
 
-        $('.product-tabs__links').removeClass('product-tabs__links--active');
-        $(this).addClass('product-tabs__links--active');
+        $('.rates-tabs__link').removeClass('rates-tabs__link--active');
+        $(this).addClass('rates-tabs__link--active');
 
-        $('.product-tabs__texts').removeClass('product-tabs__texts--active');
-        $($(this).attr('href')).addClass('product-tabs__texts--active'); /*убирает добовляет класс*/
-        // табы
-        // product-tabs__text--active
+        $('.rates-tabs__text').removeClass('rates-tabs__text--active');
+        $($(this).attr('href')).addClass('rates-tabs__text--active'); /*убирает добовляет класс*/
     });
 
+    // $('.questions__box').on('click', function () {
+    //     $('.questions__text').toggle()
+    // });
+
+    // $('.questions__box').on('click', function () {
+    //     $('.questions__text').slideToggle('questions__text--active');
+    // });
+
+    $('.questions__box').on('click', function () {
+        $(this).next().slideToggle();
+        // $(this).toggleClass('questions__text--active');
+        $(this)('.questions__text').slideToggle('questions__text--active');
+    });
+
+    // $('.questions__box').on('click', function () {
+    //     $(this).next().slideToggle();
+    //     $(this).toggleClass('questions__text--active');
+    // });
+
+// .slideToggle()
     // $('.product-tabs__link').on('click', function () {
     //     $('.product-tabs__link').toggleClass('product-tabs__link--active');
     //     $('.product-tabs__text').toggleClass('product-tabs__text--active');
