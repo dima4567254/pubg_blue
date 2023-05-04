@@ -21,20 +21,38 @@ $(function name(params) {
         $('.rates-tabs__text').removeClass('rates-tabs__text--active');
         $($(this).attr('href')).addClass('rates-tabs__text--active'); /*убирает добовляет класс*/
     });
+    // ----------------------------------
 
     // $('.questions__box').on('click', function () {
     //     $('.questions__text').toggle()
+    //     // для выпадания блока
     // });
 
     // $('.questions__box').on('click', function () {
     //     $('.questions__text').slideToggle('questions__text--active');
+    //     // бля разворота крестика.
     // });
+    // ----------------------------------
 
     $('.questions__box').on('click', function () {
         $(this).next().slideToggle();
         // $(this).toggleClass('questions__text--active');
         $(this)('.questions__text').slideToggle('questions__text--active');
     });
+
+    $('.questions__btn').on('click', function () {
+        $('.questions__btn').toggleClass('active');
+    });
+
+    // $('.questions__btn').on('click', function () {
+    //     $(this).next().slideToggle();
+    //     // $(this).toggleClass('questions__text--active');
+    //     $(this)('.questions__btn').slideToggle('active');
+    // });
+
+    // // $('.questions__btn').on('click', function () {
+    // //     $('.questions__btn').toggleClass('active');
+    // // });
 
     // $('.questions__box').on('click', function () {
     //     $(this).next().slideToggle();
@@ -92,7 +110,7 @@ $(function name(params) {
             prevEl: ".swiper-button-prev",
         },
     });
-//   !!! сделать бесконечный слайдер
+
 
 
 

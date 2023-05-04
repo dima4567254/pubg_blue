@@ -15,15 +15,16 @@
     z-index: 100;
     // background-color: transparent;
     background-color: rgba(0, 0, 0, 0.5);
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // padding: 20px 0;
-    padding: 20px 0;
-
     &__btn {
         display: none;
     }
@@ -1195,7 +1196,43 @@ option {
         color: $title;
     }
 
-    &__svg {}
+    &__btn {
+        position: relative;
+        width: 22px;
+        height: 22px;
+        border: none;
+        background-color: transparent;
+        //!!!! сделать как бефор такой автор
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 9px;
+            height: 22px;
+            width: 3px;
+            background: linear-gradient(135.62deg, #0AA6FE 24.73%, #05FFFF 128.33%);
+            transition: transform 1s;
+        }
+
+        &::before {
+            transform: rotate(270deg);
+        }
+
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+
+    .questions__btn.active:before {
+        transform: rotate(225deg);
+    }
+
+    .questions__btn.active::after {
+        transform: rotate(135deg);
+    }
+
 
     &__text {
         margin-top: 35px;
@@ -1217,6 +1254,7 @@ option {
             background: linear-gradient(120.79deg, #0AA6FE 31.33%, #05FFFF 101.79%);
         }
 
+        //  ! ! !
         &--active {
             display: flex;
         }
@@ -1231,6 +1269,256 @@ option {
     }
 }
 
+.contacts {
+    // padding: 70px 0;
+    // background-image: url('../images/icons/footer_bg.svg');
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
+
+    &__box {
+        display: flex;
+    }
+
+    &__title {
+        position: relative;
+        margin: 0 auto 60px auto;
+        display: inline-block;
+        text-align: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -22px;
+            left: -27px;
+            height: 40px;
+            width: 40px;
+            background-image: url('../images/icons/equals.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+.form {
+    background: $white;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    max-width: 720px;
+    padding: 48px 68px 33px 68px;
+    position: relative;
+    margin-left: auto;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 35%;
+        left: -97%;
+        height: 418px;
+        width: 525px;
+        background-image: url('../images/present.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 2%;
+        left: -86%;
+        height: 413px;
+        width: 364px;
+        background-image: url('../images/smoke.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__link {
+        position: absolute;
+        // top: 0;
+        // left: 0;
+
+        background: linear-gradient(103.01deg, #0AA6FE -49.1%, #05FFFF 177.15%);
+        box-shadow: 0px 4px 25px rgba(10, 166, 254, 0.48),
+            inset 0px 0px 25px rgba(0, 50, 180, 0.3);
+        border-radius: 15px;
+        transform: rotate(-45deg);
+        width: 160px;
+        height: 160px;
+        background: linear-gradient(103.01deg, #0AA6FE -49.1%, #05FFFF 177.15%);
+
+
+        &--telegram {
+            right: -10%;
+            top: -15%;
+            transform: rotate(45deg);
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: 35%;
+                top: 35%;
+                background-image: url('../images/icons/telegram.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 53px;
+                height: 46px;
+                z-index: 100;
+                transform: rotate(-40deg);
+            }
+        }
+
+        &--discord {
+            left: -11%;
+            bottom: -15%;
+            transform: rotate(45deg);
+
+            &::before {
+                content: "";
+                position: absolute;
+                right: 35%;
+                top: 35%;
+                background-image: url('../images/icons/discord.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 47px;
+                height: 54px;
+                z-index: 100;
+                transform: rotate(-40deg);
+            }
+        }
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        color: $title;
+        margin-bottom: 35px;
+    }
+
+    &__message,
+    &__input {
+        padding: 15px 15px 15px 30px;
+        border: none;
+        border-bottom: 1px solid rgba(46, 58, 89, 0.43);
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(46, 58, 89, 0.43);
+        }
+    }
+
+    &__input {
+        width: 279px;
+        margin-bottom: 45px;
+
+        &--user {
+            margin-right: 20px;
+        }
+    }
+
+    &__svg {
+        position: absolute;
+
+        &--user {
+            top: 23.5%;
+            left: 9.5%;
+        }
+
+        &--mail {
+            top: 24%;
+            left: 51.7%;
+        }
+
+        &--message {
+            top: 42.5%;
+            left: 9.5%;
+        }
+    }
+
+    &__message {
+        background-image: url('../images/icons/message.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 710px;
+        resize: none;
+        width: 100%;
+        margin-bottom: 45px;
+        height: 100px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 18px;
+            width: 19px;
+            background-image: url('../images/icons/user.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__button {
+        display: flex;
+    }
+
+    &__btn {
+        font-weight: 600;
+        color: $white;
+        background: linear-gradient(98.89deg, #FF9B05 25.06%, #FF8F3F 88.94%);
+        box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.08);
+        border-radius: 5px;
+        padding: 23px 47px;
+        border-color: transparent;
+        margin: 0 auto 60px auto;
+        display: inline-block;
+        text-align: center;
+        transition: background 0.5s;
+
+        &:focus {
+            color: $focus;
+        }
+
+        &:hover {
+            background: $hover-ac;
+        }
+
+        &:active {
+            color: $active;
+        }
+    }
+}
+
+.footer {
+    background-image: url('../images/icons/footer_bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // padding: 200px 0px;
+
+    &__menu {
+        margin-bottom: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    &__copy {
+        font-weight: 400;
+        font-size: 17px;
+        color: $white;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
 
 
 

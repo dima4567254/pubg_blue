@@ -27,13 +27,14 @@
     .title--bem
 
    переименовать social__svg
+   // !!! сделать бесконечный слайдер
  -->
 
 
 <body>
     <header class="header">
         <div class="container">
-            <nav class="menu">
+            <nav class="header__menu menu">
                 <a class=" menu__logo logo" href="#">
                     <img class="logo__menu" src="images/logo.svg" alt="logo">
                 </a>
@@ -83,7 +84,8 @@
                         </select>
                     </form>
                     <a class="menu__user link" href="#">
-                        <svg class="menu__svg" width="22px" height="24px">
+                        <svg class="menu__svg" width="22px" height="24px" fill="#ffffff">
+                            <path fill="#ffffff"></path>
                             <use xlink:href="images/sprite.svg#user">
                             </use>
                         </svg>
@@ -1275,38 +1277,15 @@
                 </div>
                 <ul class="questions__items">
                     <li class="questions__item">
-
                         <div class="questions__box">
                             <h3 class="questions__subtitle">
                                 Які ми маємо гарантії?
                             </h3>
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10.1901 0.253278V10.1901L0.253218 10.1901V12.6966L10.1901 12.6966V22.6334L12.6965 22.6334L12.6965 12.6966H22.6334V10.1901H12.6965L12.6965 0.253278L10.1901 0.253278Z"
-                                    fill="url(#paint0_linear_2_745)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_2_745" x1="5.22165" y1="5.22171" x2="31" y2="5.5"
-                                        gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0AA6FE" />
-                                        <stop offset="1" stop-color="#05FFFF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-
-                            <!-- <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.41702 18.2422L9.44345 11.2158L16.4699 18.2422L18.2422 16.4699L11.2158 9.44345L18.2422 2.41702L16.4699 0.644705L9.44345 7.67113L2.41702 0.644706L0.644703 2.41702L7.67113 9.44345L0.644705 16.4699L2.41702 18.2422Z"
-                                    fill="url(#paint0_linear_2_742)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_2_742" x1="9.44345" y1="18.2422" x2="-8.58782"
-                                        y2="-0.182638" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0AA6FE" />
-                                        <stop offset="1" stop-color="#05FFFF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg> -->
+                            <button class="questions__btn" type="button">
+                                <span class="sr-only">
+                                    Плюсик открывающий дополнительную информацию
+                                </span>
+                            </button>
                         </div>
                         <div class="questions__text">
                             <p>
@@ -1320,33 +1299,11 @@
                             <h3 class="questions__subtitle">
                                 Як встановлюються чити?
                             </h3>
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10.1901 0.253278V10.1901L0.253218 10.1901V12.6966L10.1901 12.6966V22.6334L12.6965 22.6334L12.6965 12.6966H22.6334V10.1901H12.6965L12.6965 0.253278L10.1901 0.253278Z"
-                                    fill="url(#paint0_linear_2_745)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_2_745" x1="5.22165" y1="5.22171" x2="31" y2="5.5"
-                                        gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0AA6FE" />
-                                        <stop offset="1" stop-color="#05FFFF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-
-                            <!-- <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.41702 18.2422L9.44345 11.2158L16.4699 18.2422L18.2422 16.4699L11.2158 9.44345L18.2422 2.41702L16.4699 0.644705L9.44345 7.67113L2.41702 0.644706L0.644703 2.41702L7.67113 9.44345L0.644705 16.4699L2.41702 18.2422Z"
-                                    fill="url(#paint0_linear_2_742)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_2_742" x1="9.44345" y1="18.2422" x2="-8.58782"
-                                        y2="-0.182638" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0AA6FE" />
-                                        <stop offset="1" stop-color="#05FFFF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg> -->
+                            <button class="questions__btn" type="button">
+                                <span class="sr-only">
+                                    Плюсик открывающий дополнительную информацию
+                                </span>
+                            </button>
                         </div>
                         <div class="questions__text">
                             <p>
@@ -1360,33 +1317,11 @@
                             <h3 class="questions__subtitle">
                                 Що я отримаю після оплати тарифу?
                             </h3>
-                            <!-- <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.41702 18.2422L9.44345 11.2158L16.4699 18.2422L18.2422 16.4699L11.2158 9.44345L18.2422 2.41702L16.4699 0.644705L9.44345 7.67113L2.41702 0.644706L0.644703 2.41702L7.67113 9.44345L0.644705 16.4699L2.41702 18.2422Z"
-                                    fill="url(#paint0_linear_2_742)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_2_742" x1="9.44345" y1="18.2422" x2="-8.58782"
-                                        y2="-0.182638" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0AA6FE" />
-                                        <stop offset="1" stop-color="#05FFFF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg> -->
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10.1901 0.253278V10.1901L0.253218 10.1901V12.6966L10.1901 12.6966V22.6334L12.6965 22.6334L12.6965 12.6966H22.6334V10.1901H12.6965L12.6965 0.253278L10.1901 0.253278Z"
-                                    fill="url(#paint0_linear_2_745)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_2_745" x1="5.22165" y1="5.22171" x2="31" y2="5.5"
-                                        gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0AA6FE" />
-                                        <stop offset="1" stop-color="#05FFFF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-
+                            <button class="questions__btn" type="button">
+                                <span class="sr-only">
+                                    Плюсик открывающий дополнительную информацию
+                                </span>
+                            </button>
                         </div>
                         <div class="questions__text">
                             <p>
@@ -1400,33 +1335,11 @@
                             <h3 class="questions__subtitle">
                                 Що таке DPI+, ASN, SKK?
                             </h3>
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10.1901 0.253278V10.1901L0.253218 10.1901V12.6966L10.1901 12.6966V22.6334L12.6965 22.6334L12.6965 12.6966H22.6334V10.1901H12.6965L12.6965 0.253278L10.1901 0.253278Z"
-                                    fill="url(#paint0_linear_2_745)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_2_745" x1="5.22165" y1="5.22171" x2="31" y2="5.5"
-                                        gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0AA6FE" />
-                                        <stop offset="1" stop-color="#05FFFF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-
-                            <!-- <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.41702 18.2422L9.44345 11.2158L16.4699 18.2422L18.2422 16.4699L11.2158 9.44345L18.2422 2.41702L16.4699 0.644705L9.44345 7.67113L2.41702 0.644706L0.644703 2.41702L7.67113 9.44345L0.644705 16.4699L2.41702 18.2422Z"
-                                    fill="url(#paint0_linear_2_742)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_2_742" x1="9.44345" y1="18.2422" x2="-8.58782"
-                                        y2="-0.182638" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0AA6FE" />
-                                        <stop offset="1" stop-color="#05FFFF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg> -->
+                            <button class="questions__btn" type="button">
+                                <span class="sr-only">
+                                    Плюсик открывающий дополнительную информацию
+                                </span>
+                            </button>
                         </div>
                         <div class="questions__text">
                             <p>
@@ -1440,33 +1353,11 @@
                             <h3 class="questions__subtitle">
                                 Чи впливають чити на FPS у грі?
                             </h3>
-                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10.1901 0.253278V10.1901L0.253218 10.1901V12.6966L10.1901 12.6966V22.6334L12.6965 22.6334L12.6965 12.6966H22.6334V10.1901H12.6965L12.6965 0.253278L10.1901 0.253278Z"
-                                    fill="url(#paint0_linear_2_745)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_2_745" x1="5.22165" y1="5.22171" x2="31" y2="5.5"
-                                        gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0AA6FE" />
-                                        <stop offset="1" stop-color="#05FFFF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-
-                            <!-- <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2.41702 18.2422L9.44345 11.2158L16.4699 18.2422L18.2422 16.4699L11.2158 9.44345L18.2422 2.41702L16.4699 0.644705L9.44345 7.67113L2.41702 0.644706L0.644703 2.41702L7.67113 9.44345L0.644705 16.4699L2.41702 18.2422Z"
-                                    fill="url(#paint0_linear_2_742)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_2_742" x1="9.44345" y1="18.2422" x2="-8.58782"
-                                        y2="-0.182638" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#0AA6FE" />
-                                        <stop offset="1" stop-color="#05FFFF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg> -->
+                            <button class="questions__btn" type="button">
+                                <span class="sr-only">
+                                    Плюсик открывающий дополнительную информацию
+                                </span>
+                            </button>
                         </div>
                         <div class="questions__text">
                             <p>
@@ -1482,41 +1373,115 @@
             </div>
         </section>
         <!-- !!!свг с градиентом не работают через плагин -->
-        <section class="contacts">
+        <!-- испаравить цвет свг вверху -->
+        <!-- <section class="contacts section--bem">
             <div class="container">
-                <h2 class="contacts__title">
-                    Контакти
-                </h2>
+                <div class="contacts__box">
+                    <h2 class="contacts__title title">
+                        Контакти
+                    </h2>
+                </div>
                 <form class="form">
+                    <a class="form__link form__link--telegram" href="#">
+                        <span></span>
+                    </a>
+                    <a class="form__link form__link--discord" href="#">
+                    </a>
                     <h3 class="form__subtitle">
                         Зворотній зв'язок
                     </h3>
                     <label class="sr-only" for="name">
-                        Ваше ім'я
-                    </label>
-                    <input class="form__input" id="name-input" type="text" name="name" placeholder="Ваше ім'я" required
-                        oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
-                    <label class="sr-only" for="email">
-                        Введіть ваш емейл
-                    </label>
-                    <input class="form__input" id="email-input" type="email" name="email"
-                        placeholder="Введіть ваш емейл" required
-                        oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
-                    <textarea class="form__message" name="message" id="message" placeholder="Коментар" required
-                        oninvalid="this.setCustomValidity('Поле заповнене неправильно!')"></textarea>
-                    <button class="form__btn" type="submit">
-                        Відправити
-                    </button>
-                </form>
-            </div>
-        </section>
+                        <!-- Ваше ім'я 
+        </label>
+        <input class="form__input form__input--user" id="name-input" type="text" name="name" placeholder="Ваше ім'я"
+            required oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
+        <svg class="form__svg form__svg--user" width="18px" height="19px">
+            <use xlink:href="images/sprite.svg#user">
+            </use>
+        </svg>
+        <label class="sr-only" for="email">
+            Введіть ваш емейл
+        </label>
+        <input class="form__input form__input--mail" id="email-input" type="email" name="email"
+            placeholder="Введіть ваш емейл" required oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
+        <svg class="form__svg form__svg--mail" width="20px" height="15px">
+            <use xlink:href="images/sprite.svg#mail">
+            </use>
+        </svg>
+        <textarea class="form__message" name="message" id="message" placeholder="Коментар" required
+            oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
+                    </textarea>
+        <svg class="form__svg form__svg--message" width="18px" height="18px">
+            <use xlink:href="images/sprite.svg#comment">
+            </use>
+        </svg>
+        <div class="form__button">
+            <button class="form__btn" type="submit">
+                Відправити
+            </button>
+        </div>
+        </form>
+        </div>
+        </section> -->
     </main>
 
     <footer class="footer">
+        <section class="contacts section--bem">
+            <div class="container">
+                <div class="contacts__box">
+                    <h2 class="contacts__title title">
+                        Контакти
+                    </h2>
+                </div>
+                <form class="form">
+                    <a class="form__link form__link--telegram" href="#">
+                        <span></span>
+                    </a>
+                    <a class="form__link form__link--discord" href="#">
+                    </a>
+                    <h3 class="form__subtitle">
+                        Зворотній зв'язок
+                    </h3>
+                    <label class="sr-only" for="name">
+                        <!-- Ваше ім'я -->
+                    </label>
+                    <input class="form__input form__input--user" id="name-input" type="text" name="name"
+                        placeholder="Ваше ім'я" required
+                        oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
+                    <svg class="form__svg form__svg--user" width="18px" height="19px" fill="rgba(46, 58, 89, 0.43)">
+                        <path fill="rgba(46, 58, 89, 0.43)"></path>
+                        <use xlink:href="images/sprite.svg#user">
+                        </use>
+                    </svg>
+                    <label class="sr-only" for="email">
+                        Введіть ваш емейл
+                    </label>
+                    <input class="form__input form__input--mail" id="email-input" type="email" name="email"
+                        placeholder="Введіть ваш емейл" required
+                        oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
+                    <svg class="form__svg form__svg--mail" width="20px" height="15px">
+                        <use xlink:href="images/sprite.svg#mail">
+                        </use>
+                    </svg>
+                    <textarea class="form__message" name="message" id="message" placeholder="Коментар" required
+                        oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
+                    </textarea>
+                    <svg class="form__svg form__svg--message" width="18px" height="18px">
+                        <use xlink:href="images/sprite.svg#comment">
+                        </use>
+                    </svg>
+                    <div class="form__button">
+                        <button class="form__btn" type="submit">
+                            Відправити
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
         <div class="container">
-            <nav class="menu">
-                <a class="logo menu__logo" href="#">
-                    <img class="logo__menu" src="images/logo.png" alt="logo">
+            <nav class="footer__menu menu">
+                <a class=" menu__logo logo" href="#">
+                    <img class="logo__menu" src="images/logo.svg" alt="logo">
                 </a>
                 <button class="menu__btn" type="button">
                     <span></span>
@@ -1555,23 +1520,25 @@
                     </li>
                 </ul>
                 <div class="menu__nav">
-                    <div class="dropdown">
+                    <form class="dropdown">
                         <select class="dropdown__select">
-                            <option class="dropdown__optoon dropdown-svg" value="1" name="email">1
+                            <option value="1" class="dropdown__optoon icon-ok">
+                                ru
                             </option>
-                            <option class="dropdown__optoon" value="0" name="email">2</option>
+                            <option value="0" class="dropdown__optoon icon-error">en</option>
                         </select>
-                    </div>
-                    <a class="menu__user" href="#">
-                        <svg class="social__svg" width="15px" height="15px" fill="#bcbcbc">
+                    </form>
+                    <a class="menu__user link" href="#">
+                        <svg class="menu__svg" width="22px" height="24px" fill="#ffffff">
+                            <path fill="#ffffff"></path>
                             <use xlink:href="images/sprite.svg#user">
                             </use>
                         </svg>
                     </a>
                 </div>
             </nav>
-            <div class="fotter__copy">
-                Защищено 2023 (C)
+            <div class="footer__copy">
+                Захищено 2023 (C)
             </div>
         </div>
     </footer>
