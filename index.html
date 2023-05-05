@@ -28,20 +28,19 @@
 
    переименовать social__svg
    // !!! сделать бесконечный слайдер
- -->
+
+   прописать везде обрезку текста
+            <!--89  <a class="menu__user link" href="#"> попробывать поменять цвет без картинки -->
+
 
 
 <body>
     <header class="header">
         <div class="container">
             <nav class="header__menu menu">
-                <a class=" menu__logo logo" href="#">
+                <a class="menu__logo logo" href="#">
                     <img class="logo__menu" src="images/logo.svg" alt="logo">
                 </a>
-                <button class="menu__btn" type="button">
-                    <span></span>
-                    <span class="sr-only">open menu</span>
-                </button>
                 <ul class="menu__items">
                     <li class="menu__item">
                         <a class="menu__link menu__link--active" href="#">
@@ -86,10 +85,72 @@
                     <a class="menu__user link" href="#">
                         <svg class="menu__svg" width="22px" height="24px" fill="#ffffff">
                             <path fill="#ffffff"></path>
-                            <use xlink:href="images/sprite.svg#user">
+                            <use xlink:href="images/sprite.svg#user-color">
                             </use>
                         </svg>
                     </a>
+                </div>
+            </nav>
+
+            <nav class="header__mobile menu-mobile">
+                <button class="menu-mobile__btn" type="button">
+                    <span></span>
+                    <span class="sr-only">Відкрити меню</span>
+                </button>
+                <a class="menu-mobile__logo logo" href="#">
+                    <img class="logo__menu" src="images/logo.svg" alt="logo">
+                </a>
+
+                <div class="menu-mobile__items">
+                    <a class="menu-mobile__user link" href="#">
+                        <svg class="menu-mobile__svg" width="22px" height="24px" fill="#ffffff">
+                            <path fill="#ffffff"></path>
+                            <use xlink:href="images/sprite.svg#user-color">
+                            </use>
+                        </svg>
+                    </a>
+                    <ul class="menu-mobile__list">
+                        <li class="menu-mobile__item">
+                            <a class="menu-mobile__link menu-mobile__link--active" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a class="menu-mobile__link" href="#service">
+                                Тарифи
+                            </a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a class="menu-mobile__link" href="#collections">
+                                Відгуки
+                            </a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a class="menu-mobile__link" href="#products">
+                                Faq
+                            </a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a class="menu-mobile__link" href="#about">
+                                Контакти
+                            </a>
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a class="menu-mobile__link" href="#blog">
+                                Функціонал
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-mobile__nav">
+                    <form class="dropdown">
+                        <select class="dropdown__select">
+                            <option value="1" class="dropdown__optoon icon-ok">
+                                ru
+                            </option>
+                            <option value="0" class="dropdown__optoon icon-error">en</option>
+                        </select>
+                    </form>
                 </div>
             </nav>
         </div>
@@ -136,7 +197,7 @@
                 </div>
             </div>
         </section>
-
+ <!--
         <section class="functions">
             <div class="container container-sm">
                 <div class="functions__wrapper">
@@ -173,7 +234,7 @@
                                     </p>
                                 </a>
                             </div>
-                            <!-- переделать как список -->
+                            <!-- переделать как список --
                             <div class="product-tabs__content">
                                 <div class="product-tabs__text product-tabs__text--active" id="tab-1">
                                     <div class="functions__wrapper">
@@ -183,7 +244,7 @@
                                                     <div class="swiper-slide">
                                                         <img class="swiper-slide-img" src="images/phone.png"
                                                             alt="Телефон">
-                                                        <!-- перевырезать картинку и поправить что бы по середине была -->
+                                                        <!-- перевырезать картинку и поправить что бы по середине была --
                                                     </div>
                                                     <div class="swiper-slide">
                                                         <img class="swiper-slide-img" src="images/phone.png"
@@ -1372,61 +1433,12 @@
                 </a>
             </div>
         </section>
-        <!-- !!!свг с градиентом не работают через плагин -->
-        <!-- испаравить цвет свг вверху -->
-        <!-- <section class="contacts section--bem">
-            <div class="container">
-                <div class="contacts__box">
-                    <h2 class="contacts__title title">
-                        Контакти
-                    </h2>
-                </div>
-                <form class="form">
-                    <a class="form__link form__link--telegram" href="#">
-                        <span></span>
-                    </a>
-                    <a class="form__link form__link--discord" href="#">
-                    </a>
-                    <h3 class="form__subtitle">
-                        Зворотній зв'язок
-                    </h3>
-                    <label class="sr-only" for="name">
-                        <!-- Ваше ім'я 
-        </label>
-        <input class="form__input form__input--user" id="name-input" type="text" name="name" placeholder="Ваше ім'я"
-            required oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
-        <svg class="form__svg form__svg--user" width="18px" height="19px">
-            <use xlink:href="images/sprite.svg#user">
-            </use>
-        </svg>
-        <label class="sr-only" for="email">
-            Введіть ваш емейл
-        </label>
-        <input class="form__input form__input--mail" id="email-input" type="email" name="email"
-            placeholder="Введіть ваш емейл" required oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
-        <svg class="form__svg form__svg--mail" width="20px" height="15px">
-            <use xlink:href="images/sprite.svg#mail">
-            </use>
-        </svg>
-        <textarea class="form__message" name="message" id="message" placeholder="Коментар" required
-            oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
-                    </textarea>
-        <svg class="form__svg form__svg--message" width="18px" height="18px">
-            <use xlink:href="images/sprite.svg#comment">
-            </use>
-        </svg>
-        <div class="form__button">
-            <button class="form__btn" type="submit">
-                Відправити
-            </button>
-        </div>
-        </form>
-        </div>
-        </section> -->
     </main>
 
     <footer class="footer">
-        <section class="contacts section--bem">
+        <!-- !!!свг с градиентом не работают через плагин -->
+    <!-- испаравить цвет свг вверху --
+        <section class="contacts">
             <div class="container">
                 <div class="contacts__box">
                     <h2 class="contacts__title title">
@@ -1443,7 +1455,7 @@
                         Зворотній зв'язок
                     </h3>
                     <label class="sr-only" for="name">
-                        <!-- Ваше ім'я -->
+                        <!-- Ваше ім'я --
                     </label>
                     <input class="form__input form__input--user" id="name-input" type="text" name="name"
                         placeholder="Ваше ім'я" required
@@ -1477,71 +1489,72 @@
                     </div>
                 </form>
             </div>
-        </section>
-        <div class="container">
-            <nav class="footer__menu menu">
-                <a class=" menu__logo logo" href="#">
-                    <img class="logo__menu" src="images/logo.svg" alt="logo">
-                </a>
-                <button class="menu__btn" type="button">
-                    <span></span>
-                    <span class="sr-only">open menu</span>
-                </button>
-                <ul class="menu__items">
-                    <li class="menu__item">
-                        <a class="menu__link menu__link--active" href="#">
-                            Головна
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#service">
-                            Тарифи
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#collections">
-                            Відгуки
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#products">
-                            Faq
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#about">
-                            Контакти
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#blog">
-                            Функціонал
-                        </a>
-                    </li>
-                </ul>
-                <div class="menu__nav">
-                    <form class="dropdown">
-                        <select class="dropdown__select">
-                            <option value="1" class="dropdown__optoon icon-ok">
-                                ru
-                            </option>
-                            <option value="0" class="dropdown__optoon icon-error">en</option>
-                        </select>
-                    </form>
-                    <a class="menu__user link" href="#">
-                        <svg class="menu__svg" width="22px" height="24px" fill="#ffffff">
-                            <path fill="#ffffff"></path>
-                            <use xlink:href="images/sprite.svg#user">
-                            </use>
-                        </svg>
+
+            <div class="container">
+                <nav class="footer__menu menu">
+                    <a class=" menu__logo logo" href="#">
+                        <img class="logo__menu" src="images/logo.svg" alt="logo">
                     </a>
+                    <button class="menu__btn" type="button">
+                        <span></span>
+                        <span class="sr-only">open menu</span>
+                    </button>
+                    <ul class="menu__items">
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--active" href="#">
+                                Головна
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#service">
+                                Тарифи
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#collections">
+                                Відгуки
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#products">
+                                Faq
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#about">
+                                Контакти
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#blog">
+                                Функціонал
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="menu__nav">
+                        <form class="dropdown">
+                            <select class="dropdown__select">
+                                <option value="1" class="dropdown__optoon icon-ok">
+                                    ru
+                                </option>
+                                <option value="0" class="dropdown__optoon icon-error">en</option>
+                            </select>
+                        </form>
+                        <a class="menu__user link" href="#">
+                            <svg class="menu__svg" width="22px" height="24px" fill="#ffffff">
+                                <path fill="#ffffff"></path>
+                                <use fill="#ffffff" xlink:href="images/sprite.svg#user-color">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </nav>
+                <div class="footer__copy">
+                    Захищено 2023 (C)
                 </div>
-            </nav>
-            <div class="footer__copy">
-                Захищено 2023 (C)
             </div>
-        </div>
-    </footer>
+        </section>
+    </footer> -->
 
     <script src="js/main.min.js"></script>
 </body>

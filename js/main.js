@@ -1,5 +1,28 @@
 $(function name(params) {
 
+    $('.menu-mobile__btn').on('click', function () {
+        $('.menu-mobile__items').toggleClass('menu-mobile__items--active');
+
+        /*$('.header__logo').toggleClass('menu__list--active');
+        $('.intro__btn').toggleClass('menu__list--active');*/
+        // для адаптива кнопки 
+    });
+
+    $('.menu-mobile__btn').on('click', function () {
+        $('.menu-mobile__btn').toggleClass('active');
+        // для кнопки крестик
+    });
+
+    // $('.menu__btn').on('click', function () {
+    //     $('.menu__items').toggleClass('menu__items--active');
+
+    //     /*$('.header__logo').toggleClass('menu__list--active');
+    //     $('.intro__btn').toggleClass('menu__list--active');*/
+    //     // для адаптива кнопки 
+    // });
+
+    
+
     $('.product-tabs__link').on('click', function (e) {
         e.preventDefault();
 
@@ -59,7 +82,7 @@ $(function name(params) {
     //     $(this).toggleClass('questions__text--active');
     // });
 
-// .slideToggle()
+    // .slideToggle()
     // $('.product-tabs__link').on('click', function () {
     //     $('.product-tabs__link').toggleClass('product-tabs__link--active');
     //     $('.product-tabs__text').toggleClass('product-tabs__text--active');
