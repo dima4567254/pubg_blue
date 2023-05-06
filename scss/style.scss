@@ -101,7 +101,6 @@
         transition: opacity 5.5s;
         opacity: 1;
 
-
         &:focus {
             color: $focus;
         }
@@ -611,7 +610,6 @@ option {
             position: absolute;
             top: -13px;
             margin-left: -32px;
-            margin-left: -13px;
             height: 45px;
             width: 45px;
             background-image: url('../images/icons/equals.svg');
@@ -623,6 +621,7 @@ option {
                 height: 22px;
                 width: 22px;
                 top: -7px;
+                margin-left: -13px;
             }
         }
 
@@ -804,20 +803,25 @@ option {
 
 // --------------------------------------
 
-
 .functions {
     background-color: #F5F9FF;
     padding-top: 25px;
     padding-bottom: 50px;
 
     &__wrapper {
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
+    }
+
+    &__itemss {
+        max-width: 650px;
+        margin-left: auto;
     }
 
     &__slider {
         width: 100%;
         position: relative;
+
     }
 
     // &__swipers {
@@ -828,16 +832,21 @@ option {
 
     &__inner {
         // margin-left: 11%;
+
+        display: flex;
+        justify-content: center;
     }
 
     &__swiper {
         // padding-top: 110px;
-        margin-top: 100px;
+        // margin-top: 100px;
         max-width: 300px;
+        margin-top: -100px;
     }
 
     &__box {
         max-width: 650px;
+        // max-width: 550px;
     }
 
     &__title {
@@ -876,8 +885,14 @@ option {
         font-weight: 400;
         text-align: center;
         color: #828282;
-        margin-bottom: 60px;
-        max-width: 500px;
+        // margin: 0  60px;
+        margin: 0 auto 60px auto;
+        // max-width: 500px;
+        max-width: 650px;
+        // margin-bottom: 60px;
+        // margin-left: 0;
+        // margin-right: auto;
+
     }
 
     &__items {
@@ -1137,8 +1152,8 @@ option {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 100;
-        margin-bottom: 60px; //40 у верхнего
+        z-index: 10;
+        // margin-bottom: 60px; //40 у верхнего
         display: flex;
         // justify-content: start;
         flex-wrap: wrap;
