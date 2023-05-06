@@ -483,6 +483,7 @@ option {
 }
 
 .intro {
+    // не совсем точно доделвл 375 там картинка не полукруглая
     display: flex;
     align-items: end;
     background-image: url('../images/icons/blue_bg.svg');
@@ -497,6 +498,11 @@ option {
 
     @media (max-width: 576px) {
         align-items: center;
+        background-image: url('../images/icons/blue_bg-mobil.svg');
+        // background-size: 375px 560px;
+        // width: 375px;
+        // height: 560px;
+
     }
 
     &::before {
@@ -511,17 +517,19 @@ option {
         background-position: center;
         background-size: cover;
         z-index: -1;
+
+        @media (max-width: 576px) {
+            background-image: none;
+        }
     }
 
     &::after {
         content: "";
         position: absolute;
-        top: 35%;
+        top: 15%;
         right: 0;
-        // height: 460px;
-        // width: 790px;
-        height: 370px;
-        width: 633px;
+        height: 661px;
+        width: 1048px;
         background-image: url('../images/car.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -557,7 +565,7 @@ option {
 
     &__box {
         max-width: 750px;
-        margin-left: 2%;
+        margin-left: 10%;
         z-index: 1;
 
         @media (max-width: 576px) {
@@ -577,6 +585,12 @@ option {
             margin-left: 0%;
             text-align: center;
             padding: 0px 10px;
+            // !!!
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 84vh;
         }
     }
 
@@ -584,11 +598,11 @@ option {
         font-weight: 800;
         font-size: 55px;
         text-transform: uppercase;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         position: relative;
 
         @media (max-width: 576px) {
-            font-size: 29px;
+            font-size: 30px;
             margin-bottom: 30px;
         }
 
@@ -596,7 +610,8 @@ option {
             content: "";
             position: absolute;
             top: -13px;
-            left: -22px;
+            margin-left: -32px;
+            margin-left: -13px;
             height: 45px;
             width: 45px;
             background-image: url('../images/icons/equals.svg');
@@ -608,7 +623,6 @@ option {
                 height: 22px;
                 width: 22px;
                 top: -7px;
-                left: -7px;
             }
         }
 
@@ -659,12 +673,19 @@ option {
         }
     }
 
-    // &__links {
-    //     margin-bottom: 30px;
-    // }
+    &__links {
+        margin-bottom: 30px;
+    }
 
     &__img {
         z-index: 30;
+        width: 490px;
+        height: 240px;
+
+        @media (max-width: 576px) {
+            width: 265px;
+            height: 120px;
+        }
     }
 }
 
@@ -687,8 +708,10 @@ option {
             font-size: 13px;
             margin-right: 0;
             margin-bottom: 20px;
-            max-width: 100%;
+            // max-width: 100%;
             justify-content: space-between;
+            max-width: 180px;
+            width: 100%;
         }
 
         &:focus {
@@ -716,26 +739,28 @@ option {
 
     &__video {
         padding: 23px 38px;
+
+        @media (max-width: 576px) {
+            padding: 18px 18px;
+        }
     }
 }
 
 .video {
-    // background: linear-gradient(113.71deg, #A9EAFF 12.56%, #6CFFFF 85.62%);
     border-radius: 5px;
-    // border: 1px solid $slider-Station;
-
     border: 1px solid skyblue;
     border-image: linear-gradient(113.71deg, #A9EAFF 12.56%, #6CFFFF 85.62%);
     border-image-slice: 1;
     transition: color 0.5s;
     font-weight: 600;
-    /* identical to box height */
     color: $white;
 
     @media (max-width: 576px) {
         font-size: 13px;
-        display: inline-block;
-        width: 100%;
+        display: block;
+        max-width: 180px;
+        margin: 0 auto;
+        // width: 100%;
     }
 
     &__text {
@@ -801,8 +826,13 @@ option {
     //     // найти и удалить
     // }
 
+    &__inner {
+        // margin-left: 11%;
+    }
+
     &__swiper {
-        padding-top: 110px;
+        // padding-top: 110px;
+        margin-top: 100px;
         max-width: 300px;
     }
 
@@ -908,7 +938,7 @@ option {
 
 .swiper-slide-img {
     width: 300px;
-    height: 585px;
+    height: 610px;
     object-fit: cover;
     margin-bottom: 40px;
 }
@@ -1101,9 +1131,13 @@ option {
 
 
 .product-tabs {
-    &__item-top {
-        z-index: 100;
+    position: relative;
 
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
         margin-bottom: 60px; //40 у верхнего
         display: flex;
         // justify-content: start;
