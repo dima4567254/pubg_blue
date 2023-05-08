@@ -23,16 +23,20 @@ $(function name(params) {
 
     
 
-    $('.product-tabs__link').on('click', function (e) {
+    $('.functions-tab__link').on('click', function (e) {
         e.preventDefault();
 
-        $('.product-tabs__link').removeClass('product-tabs__link--active');
-        $(this).addClass('product-tabs__link--active');
+        $('.functions-tab__link').removeClass('functions-tab__link--active');
+        $(this).addClass('functions-tab__link--active');
 
-        $('.product-tabs__text').removeClass('product-tabs__text--active');
-        $($(this).attr('href')).addClass('product-tabs__text--active'); /*убирает добовляет класс*/
+        // $('.product-tabs__text').removeClass('product-tabs__text--active');
+        // $(this).addClass('product-tabs__text--active');
+
+        $('.functions-tab__tab').removeClass('functions-tab__tab--active');
+        $($(this).attr('href')).addClass('functions-tab__tab--active'); /*убирает добовляет класс*/
         // табы
         // product-tabs__text--active
+        // .attr('href') влияет на перезагрузку страници
     });
 
     $('.rates-tabs__link').on('click', function (e) {

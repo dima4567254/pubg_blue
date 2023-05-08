@@ -807,46 +807,40 @@ option {
     background-color: #F5F9FF;
     padding-top: 25px;
     padding-bottom: 50px;
+}
 
-    &__wrapper {
-        // display: flex;
-        // justify-content: space-between;
+.functions-tab {
+    &__top {
+        margin-left: auto;
+        max-width: 650px;
     }
 
-    &__itemss {
-        max-width: 650px;
-        margin-left: auto;
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__swiper {
+        max-width: 300px;
+    }
+
+    &__wrap {
+        margin: 0 auto;
     }
 
     &__slider {
         width: 100%;
         position: relative;
-
     }
 
-    // &__swipers {
-    //     padding-top: 150px;
-    //     max-width: 300px;
-    //     // найти и удалить
-    // }
 
     &__inner {
-        // margin-left: 11%;
-
+        margin-left: 85px;
+        // margin-left: 85px; это костыль
+        // не совсем правильное название
         display: flex;
         justify-content: center;
-    }
-
-    &__swiper {
-        // padding-top: 110px;
-        // margin-top: 100px;
-        max-width: 300px;
-        margin-top: -100px;
-    }
-
-    &__box {
-        max-width: 650px;
-        // max-width: 550px;
     }
 
     &__title {
@@ -885,14 +879,8 @@ option {
         font-weight: 400;
         text-align: center;
         color: #828282;
-        // margin: 0  60px;
         margin: 0 auto 60px auto;
-        // max-width: 500px;
         max-width: 650px;
-        // margin-bottom: 60px;
-        // margin-left: 0;
-        // margin-right: auto;
-
     }
 
     &__items {
@@ -947,7 +935,146 @@ option {
         justify-content: center;
         align-items: center;
         background-color: #FF3B3B;
+    }
+}
 
+.functions-tab {
+    position: relative;
+
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        margin-bottom: 60px; //40 у верхнего
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        @media (max-width: 992px) {
+            margin: 0 auto 50px;
+        }
+
+        @media (max-width: 768px) {
+            margin: 0 auto 35px;
+        }
+
+        @media (max-width: 575px) {
+            margin: 0 auto 20px;
+        }
+    }
+
+    &__link {
+        background-color: $white;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
+        border-radius: 5px;
+        color: #AAAAAA;
+        padding: 17px 33px;
+        transition: background-color 0.4s;
+        letter-spacing: 1.1px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        // display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 320px;
+
+        &--active {
+            background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+            color: $white;
+        }
+
+        @media (max-width: 992px) {
+            padding: 15px 50px 15px 50px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 15px 55px 15px 55px;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            padding: 15px 15px 15px 15px;
+            max-width: 80%;
+            margin: 0 auto 20px;
+            display: flex;
+            width: 80%;
+            justify-content: center;
+        }
+
+        &--information {
+            padding: 15px 20px 15px 20px;
+        }
+
+        &--active {
+            background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
+            color: $white;
+
+            path {
+                fill: $white;
+            }
+        }
+    }
+
+    &__svg {
+        margin-right: 15px;
+    }
+
+    &__tab {
+        display: none;
+        // opacity: 0;
+        // overflow: hidden;
+        line-height: 1.8;
+        font-weight: 400;
+        letter-spacing: 0px;
+        min-height: 200px;
+
+        &.functions-tabs__text--rates-active {
+            display: block;
+            // overflow: visible;
+            // opacity: 1;
+        }
+
+        // &--active {
+        //     display: block;
+        // }
+
+        &.functions-tab__tab--active {
+            display: block;
+            // overflow: visible;
+            // opacity: 1;
+        }
+
+        // &.__tab--active {
+        //     display: block;
+        // }
+    }
+
+    &__texts {
+        display: none;
+        line-height: 1.8;
+        font-weight: 400;
+        letter-spacing: 0px;
+        min-height: 200px;
+
+        &.product-tabs__texts--rates-active {
+            display: block;
+        }
+
+        &.product-tabs__texts--active {
+            display: block;
+        }
+    }
+}
+
+.swiper-button-disabled {
+    path {
+        fill: #E2E2E2;
     }
 }
 
@@ -958,11 +1085,11 @@ option {
     margin-bottom: 40px;
 }
 
-.swiper-next {
+.swiper-next {}
+
+.swiper-prev {
     margin-right: 35px;
 }
-
-.swiper-prev {}
 
 .swiper-next,
 .swiper-prev {
@@ -970,7 +1097,9 @@ option {
     font-size: 27px;
     cursor: pointer;
 
-    //!!!! transform: rotate(180deg);
+
+    // 
+    // !!!! transform: rotate(180deg);
     // background: linear-gradient(114.94deg, #0AA6FE -7.86%, #00E0FF 96.71%);
     // background-clip: text;
     // color: linear-gradient(114.94deg, #0AA6FE -7.86%, #00E0FF 96.71%);
@@ -1142,144 +1271,10 @@ option {
     // overflow: hidden;
     max-width: 830px;
     // height: 250px;
+
 }
 
 
-.product-tabs {
-    position: relative;
-
-    &__wrapper {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        // margin-bottom: 60px; //40 у верхнего
-        display: flex;
-        // justify-content: start;
-        flex-wrap: wrap;
-        gap: 15px;
-
-        @media (max-width: 992px) {
-            margin: 0 auto 50px;
-        }
-
-        @media (max-width: 768px) {
-            margin: 0 auto 35px;
-        }
-
-        @media (max-width: 575px) {
-            margin: 0 auto 20px;
-        }
-    }
-
-    &__link {
-        background-color: $white;
-        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.03);
-        border-radius: 5px;
-        color: #AAAAAA;
-        padding: 17px 33px;
-        transition: background-color 0.4s;
-        letter-spacing: 1.1px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        // display: inline-block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 320px;
-
-        &--active {
-            background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
-            color: $white;
-        }
-
-        @media (max-width: 992px) {
-            padding: 15px 50px 15px 50px;
-        }
-
-        @media (max-width: 768px) {
-            padding: 15px 55px 15px 55px;
-
-            &:not(:last-child) {
-                margin-bottom: 20px;
-            }
-        }
-
-        @media (max-width: 575px) {
-            padding: 15px 15px 15px 15px;
-            max-width: 80%;
-            margin: 0 auto 20px;
-            display: flex;
-            width: 80%;
-            justify-content: center;
-        }
-
-        &--information {
-            padding: 15px 20px 15px 20px;
-        }
-
-        &--active {
-            background: linear-gradient(82.58deg, #0AA6FE 37.16%, #05FFFF 163.86%);
-            color: $white;
-            // fill: white;
-
-            // svg use {}
-
-            // path {
-            //     fill: white;
-            // }
-            path {
-                fill: $white;
-            }
-
-            // svg path {
-            //     fill: white;
-            // }
-
-        }
-    }
-
-    &__svg {
-        margin-right: 15px;
-    }
-
-    &__text {
-        display: none;
-        line-height: 1.8;
-        font-weight: 400;
-        letter-spacing: 0px;
-        min-height: 200px;
-
-        &.product-tabs__text--rates-active {
-            display: block;
-        }
-
-        &.product-tabs__text--active {
-            display: block;
-        }
-    }
-
-    &__texts {
-        display: none;
-        line-height: 1.8;
-        font-weight: 400;
-        letter-spacing: 0px;
-        min-height: 200px;
-
-        &.product-tabs__texts--rates-active {
-            display: block;
-        }
-
-        &.product-tabs__texts--active {
-            display: block;
-        }
-    }
-
-    // &__text p {
-    //     // @include line-clamp-box(6);
-    // }
-}
 
 
 
