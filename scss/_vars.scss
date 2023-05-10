@@ -56,12 +56,12 @@ $padding-992:50px; //70
 $padding-768:40px; //50
 $padding-576:30px;
 
-// @mixin line-clamp-box($line-clamp, ) {
-//     display: -webkit-box;
-//     -webkit-line-clamp: $line-clamp;
-//     -webkit-box-orient: vertical;
-//     overflow: hidden;
-// }
+@mixin line-clamp-box($line-clamp, ) {
+    display: -webkit-box;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 // @mixin line-clamp-inline($line-clamp, ) {
 //     display: -webkit-inline-flex;

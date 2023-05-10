@@ -178,15 +178,15 @@
                                 Найнижча ціна за мегахеш
                             </p>
                         </div>
-                        <div class="intro__links links">
-                            <a class="links__link link" href="#">
+                        <div class="intro__links">
+                            <a class="intro__link link" href="#">
                                 Придбати
-                                <svg class="links__svg" width="54px" height="30px">
+                                <svg class="link__svg" width="54px" height="30px">
                                     <use xlink:href="images/sprite.svg#right-arrow">
                                     </use>
                                 </svg>
                             </a>
-                            <a class=" links__video video" data-fancybox
+                            <a class="intro__video video" data-fancybox
                                 style="background-image: url('images/video-bg.jpg')"
                                 href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
                                 Подивитись відео
@@ -205,7 +205,7 @@
                 <!-- переделать как список -->
                 <div class="functions__functions functions-tab">
                     <div class="functions-tab__wrapper">
-                        <a class="functions-tab__link" href="#tab-1">
+                        <a class="functions-tab__link functions-tab__link--tab" href="#tab-1">
                             <svg class="functions-tab__svg" width="40" height="40" viewBox="0 0 40 40"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -214,7 +214,7 @@
                             </svg>
                             <p>Windows</p>
                         </a>
-                        <a class="functions-tab__link" href="#tab-2">
+                        <a class="functions-tab__link functions-tab__link--tab" href="#tab-2">
                             <svg class="functions-tab__svg" width="40" height="40" viewBox="0 0 40 40"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -223,7 +223,8 @@
                             </svg>
                             <p>Android</p>
                         </a>
-                        <a class="functions-tab__link functions-tab__link--active" href="#tab-3">
+                        <a class="functions-tab__link functions-tab__link--active functions-tab__link--tab"
+                            href="#tab-3">
                             <svg class="functions-tab__svg" width="40" height="40" viewBox="0 0 40 40"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -236,7 +237,6 @@
                         </a>
                     </div>
                 </div>
-
                 <div class="functions-tab__functions-tabs">
                     <div class="functions-tab__tab" id="tab-1">
                         <div class="functions-tab__content">
@@ -255,6 +255,12 @@
                                 <div class="functions-tab__wrap">
                                     <div class="functions-tab__swiper swiper">
                                         <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img class="swiper-slide-img" src="images/phone.png" alt="Телефон">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="swiper-slide-img" src="images/phone.png" alt="Телефон">
+                                            </div>
                                             <div class="swiper-slide">
                                                 <img class="swiper-slide-img" src="images/phone.png" alt="Телефон">
                                             </div>
@@ -295,9 +301,11 @@
                                 </div>
                                 <div class="functions-tab__inner">
                                     <div class="functions-tab__box">
+                                        <h3 class="functions-tab__subtitle">опис:</h3>
                                         <ul class="functions-tab__items">
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -305,7 +313,8 @@
                                                 стіни.
                                             </li>
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -313,7 +322,8 @@
                                                 зброї.
                                             </li>
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -321,7 +331,8 @@
                                                 противника.
                                             </li>
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -337,10 +348,10 @@
                                                 Рекомендуємо залишити стандартні параметри в читанні
                                             </span>
                                         </div>
-                                        <div class="functions-tab__links links">
-                                            <a class="links__link link" href="#">
+                                        <div class="functions-tab__links">
+                                            <a class="functions-tab__link functions-tab__link--color link" href="#">
                                                 Придбати
-                                                <svg class="links__svg" width="54px" height="30px">
+                                                <svg class="link__svg" width="54px" height="30px">
                                                     <use xlink:href="images/sprite.svg#right-arrow">
                                                     </use>
                                                 </svg>
@@ -385,6 +396,12 @@
                                             <div class="swiper-slide">
                                                 <img class="swiper-slide-img" src="images/phone.png" alt="Телефон">
                                             </div>
+                                            <div class="swiper-slide">
+                                                <img class="swiper-slide-img" src="images/phone.png" alt="Телефон">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="swiper-slide-img" src="images/phone.png" alt="Телефон">
+                                            </div>
                                         </div>
                                         <div class="swiper-buttons">
                                             <svg class="swiper-prev" width="61" height="32"
@@ -419,9 +436,11 @@
                                 </div>
                                 <div class="functions-tab__inner">
                                     <div class="functions-tab__box">
+                                        <h3 class="functions-tab__subtitle">опис:</h3>
                                         <ul class="functions-tab__items">
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -429,7 +448,8 @@
                                                 стіни.
                                             </li>
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -437,7 +457,8 @@
                                                 зброї.
                                             </li>
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -445,7 +466,8 @@
                                                 противника.
                                             </li>
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -461,10 +483,10 @@
                                                 Рекомендуємо залишити стандартні параметри в читанні
                                             </span>
                                         </div>
-                                        <div class="functions-tab__links links">
-                                            <a class="links__link link" href="#">
+                                        <div class="functions-tab__links">
+                                            <a class="functions-tab__link functions-tab__link--color link" href="#">
                                                 Придбати
-                                                <svg class="links__svg" width="54px" height="30px">
+                                                <svg class="link__svg" width="54px" height="30px">
                                                     <use xlink:href="images/sprite.svg#right-arrow">
                                                     </use>
                                                 </svg>
@@ -509,6 +531,12 @@
                                             <div class="swiper-slide">
                                                 <img class="swiper-slide-img" src="images/phone.png" alt="Телефон">
                                             </div>
+                                            <div class="swiper-slide">
+                                                <img class="swiper-slide-img" src="images/phone.png" alt="Телефон">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="swiper-slide-img" src="images/phone.png" alt="Телефон">
+                                            </div>
                                         </div>
                                         <div class="swiper-buttons">
                                             <svg class="swiper-prev" width="61" height="32"
@@ -543,9 +571,11 @@
                                 </div>
                                 <div class="functions-tab__inner">
                                     <div class="functions-tab__box">
+                                        <h3 class="functions-tab__subtitle">опис:</h3>
                                         <ul class="functions-tab__items">
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -553,7 +583,8 @@
                                                 стіни.
                                             </li>
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -561,7 +592,8 @@
                                                 зброї.
                                             </li>
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -569,7 +601,8 @@
                                                 противника.
                                             </li>
                                             <li class="functions-tab__item">
-                                                <svg class="functions-tab__svg" width="10px" height="10px">
+                                                <svg class="functions-tab__svg functions-tab__svg--decor" width="10px"
+                                                    height="10px">
                                                     <use xlink:href="images/sprite.svg#rhombus">
                                                     </use>
                                                 </svg>
@@ -585,10 +618,10 @@
                                                 Рекомендуємо залишити стандартні параметри в читанні
                                             </span>
                                         </div>
-                                        <div class="functions-tab__links links">
-                                            <a class="links__link link" href="#">
+                                        <div class="functions-tab__links">
+                                            <a class="functions-tab__link functions-tab__link--link link" href="#">
                                                 Придбати
-                                                <svg class="links__svg" width="54px" height="30px">
+                                                <svg class="link__svg" width="54px" height="30px">
                                                     <use xlink:href="images/sprite.svg#right-arrow">
                                                     </use>
                                                 </svg>
@@ -613,13 +646,15 @@
                 </div>
             </div>
         </section>
-        <!--
+
         <section class="about">
             <div class="container container--sm">
                 <div class="about__wrapper">
-                    <h2 class="about__title title title--bem">
-                        що кажуть про нас
-                    </h2>
+                    <div class="about__box">
+                        <h2 class="about__title title title--bem">
+                            що кажуть про нас
+                        </h2>
+                    </div>
                     <div class="swiperAbout">
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide">
@@ -656,16 +691,52 @@
                                     </div>
                                 </div>
                             </li>
+                            <li class="swiper-slide">
+                                <div class="swiper-about">
+                                    <div class="swiper-about__images">
+                                        <img class="swiper-about__img" src="images/avatar.png" alt="Avatar">
+                                    </div>
+                                    <h3 class="swiper-about__title">
+                                        Егор Черняев
+                                    </h3>
+                                    <div class="swiper-about__text">
+                                        <p>
+                                            Рекомендую данный софт! Аналогов не нашел нигде, я решил не
+                                            заморачиваться и сразу приобрел ПРО версию и
+                                            теперь играю в свое удовольствие.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="swiper-slide">
+                                <div class="swiper-about">
+                                    <div class="swiper-about__images">
+                                        <img class="swiper-about__img" src="images/avatar.png" alt="Avatar">
+                                    </div>
+                                    <h3 class="swiper-about__title">
+                                        Егор Черняев
+                                    </h3>
+                                    <div class="swiper-about__text">
+                                        <p>
+                                            Рекомендую данный софт! Аналогов не нашел нигде, я решил не
+                                            заморачиваться и сразу приобрел ПРО версию и
+                                            теперь играю в свое удовольствие.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                        <div class="swiper-button-next">
-                        </div>
-                        <div class="swiper-button-prev">
+                        <div class="swiper-buttons">
+                            <div class="swiper-button-prev">
+                            </div>
+                            <div class="swiper-button-next">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
+        <!--
         <section class="rates">
             <div class="container">
                 <div class="rates__box">

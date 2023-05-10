@@ -21,7 +21,7 @@ $(function name(params) {
     //     // для адаптива кнопки 
     // });
 
-    
+
 
     $('.functions-tab__link').on('click', function (e) {
         e.preventDefault();
@@ -122,6 +122,13 @@ $(function name(params) {
             nextEl: ".swiper-next",
             prevEl: ".swiper-prev",
         },
+        breakpoints: {
+            577: {
+                autoplay: {
+                    delay: 1000,
+                },
+            },
+        }
     });
 
     const swiperAbout = new Swiper('.swiperAbout', {
@@ -132,9 +139,19 @@ $(function name(params) {
         // grid: {
         //     rows: 2,
         // },
+
+
+        spaceBetween: 10,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            577: {
+                autoplay: {
+                    delay: 1000,
+                },
+            },
         },
     });
 
