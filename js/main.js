@@ -1,3 +1,55 @@
+
+setTimeout(function () {
+    $('select,filter-selects__sort').styler();
+}, 100)
+// document.querySelector('.video').style.display = 'none';
+
+// $(function name(params) {
+const swiper = new Swiper('.swiper', {
+    // slidesPerView: 1,
+    // loop: true,
+    // loopedslides: 1,
+    // slidesPerView: 2,
+    // grid: {
+    //     rows: 2,
+    // },
+    navigation: {
+        nextEl: ".swiper-next",
+        prevEl: ".swiper-prev",
+    },
+    breakpoints: {
+        577: {
+            autoplay: {
+                delay: 1000,
+            },
+        },
+    }
+});
+
+const swiperAbout = new Swiper('.swiperAbout', {
+    // slidesPerView: 1,
+    // loop: true,
+    // loopedslides: 1,
+    // slidesPerView: 2,
+    // grid: {
+    //     rows: 2,
+    // },
+
+
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        577: {
+            autoplay: {
+                delay: 1000,
+            },
+        },
+    },
+});
+
 $(function name(params) {
 
     $('.menu-mobile__btn').on('click', function () {
@@ -104,56 +156,6 @@ $(function name(params) {
     //     // product-tabs__text--active
     // });
 
-    setTimeout(function () {
-        $('select,filter-selects__sort').styler();
-    }, 100)
-    // document.querySelector('.video').style.display = 'none';
-
-    // $(function name(params) {
-    const swiper = new Swiper('.swiper', {
-        // slidesPerView: 1,
-        // loop: true,
-        // loopedslides: 1,
-        // slidesPerView: 2,
-        // grid: {
-        //     rows: 2,
-        // },
-        navigation: {
-            nextEl: ".swiper-next",
-            prevEl: ".swiper-prev",
-        },
-        breakpoints: {
-            577: {
-                autoplay: {
-                    delay: 1000,
-                },
-            },
-        }
-    });
-
-    const swiperAbout = new Swiper('.swiperAbout', {
-        // slidesPerView: 1,
-        // loop: true,
-        // loopedslides: 1,
-        // slidesPerView: 2,
-        // grid: {
-        //     rows: 2,
-        // },
-
-
-        spaceBetween: 10,
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            577: {
-                autoplay: {
-                    delay: 1000,
-                },
-            },
-        },
-    });
 
 
 

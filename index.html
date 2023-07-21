@@ -8,19 +8,19 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="https://yoursite.ru/favicon.png" type="image/x-icon">
     <title>Pubg</title>
-    <link rel="stylesheet" href="css/awesome.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/awesome.css?_v=20230718004323">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230718004323">
 </head>
 
 <!-- картинки в интро хз контентные нет
     a user сылка или нет
-
+проблема с кнопкоцй в хедере она больше первой
     <!-- 518проверить на лишнии обертки -->
 <!-- не уверен что h3  519-->
 <!-- 624 проверить может можно без флекс -->
 <!-- решил не писать ограничение текста -->
 <!-- упорядочить все бем блоки 224-->
-
+<!-- баг со слайдером не видно что слады закончились -->
 <!-- встроить ютуб плеер -->
 
 <!--.section--bem 
@@ -33,10 +33,16 @@
             <!--89  <a class="menu__user link" href="#"> попробывать поменять цвет без картинки -->
 
 
+<!-- липкое меню -->
 
 <body>
-    <header class="header">
-        <div class="container">
+    <!-- не удалял обертки -->
+    <!-- <div class="containers8">
+        <!-- <div class="naw"> --
+        <header class="header">
+            <!-- <div class="header__wrapper"> -->
+    <!-- <div class="container"> -->
+    <!-- header__menu menu --
             <nav class="header__menu menu">
                 <a class="menu__logo logo" href="#">
                     <img class="logo__menu" src="images/logo.svg" alt="logo">
@@ -72,6 +78,7 @@
                             Функціонал
                         </a>
                     </li>
+
                 </ul>
                 <div class="menu__nav">
                     <form class="dropdown">
@@ -79,7 +86,9 @@
                             <option value="1" class="dropdown__optoon icon-ok">
                                 ru
                             </option>
-                            <option value="0" class="dropdown__optoon icon-error">en</option>
+                            <option value="0" class="dropdown__optoon icon-error">
+                                en
+                            </option>
                         </select>
                     </form>
                     <a class="menu__user link" href="#">
@@ -91,8 +100,9 @@
                     </a>
                 </div>
             </nav>
+            <!-- </div> -->
 
-            <nav class="header__mobile menu-mobile">
+    <!--   <nav class="header__mobile menu-mobile">
                 <button class="menu-mobile__btn" type="button">
                     <span></span>
                     <span class="sr-only">Відкрити меню</span>
@@ -152,57 +162,62 @@
                         </select>
                     </form>
                 </div>
-            </nav>
-        </div>
+            </nav> 
+             -->
     </header>
-
-    <main class="main">
+    <!-- </div> -->
+    </div>
+    <!-- <main class="main"> -->
+    <div class="containers">
         <section class="intro">
+            <!-- <div class="intro__wrapper"> -->
+            <!-- <div class="intro__box"> -->
             <div class="intro__wrapper">
-                <div class="intro__box">
-                    <div class="intro__info">
-                        <h1 class="intro__title">
-                            чити на p<svg class="intro__svg" width="40px" height="40px">
-                                <use xlink:href="images/sprite.svg#diamonds">
-                                </use>
-                            </svg>ubg
-                            кращі на ринку
-                            без бану!
-                        </h1>
-                        <div class="intro__text">
-                            <p>
-                                Кращі зборки на ринку, перевірені досвідом та часом, а також,
-                                оптимальне співвідношення ціни, надійності та продуктивності
-                            </p>
-                            <p>
-                                Найнижча ціна за мегахеш
-                            </p>
-                        </div>
-                        <div class="intro__links">
-                            <a class="intro__link link" href="#">
-                                Придбати
-                                <svg class="link__svg" width="54px" height="30px">
-                                    <use xlink:href="images/sprite.svg#right-arrow">
-                                    </use>
-                                </svg>
-                            </a>
-                            <a class="intro__video video" data-fancybox
-                                style="background-image: url('images/video-bg.jpg')"
-                                href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
-                                Подивитись відео
-                            </a>
-                        </div>
-                    </div>
-                    <div class="">
-                        <img class="intro__img" src="images/weapon.png" alt="Зброя">
-                    </div>
+                <h1 class="intro__title">
+                    чити на p
+                    <svg class="intro__svg" width="4rem" height="4rem">
+                        <use xlink:href="images/sprite.svg#diamonds">
+                        </use>
+                    </svg>ubg
+                    кращі на ринку
+                    без бану!
+                </h1>
+                <div class="intro__text">
+                    <p>
+                        Кращі зборки на ринку, перевірені досвідом та часом, а також,
+                        оптимальне співвідношення ціни, надійності та продуктивності
+                    </p>
+                    <p>
+                        Найнижча ціна за мегахеш
+                    </p>
+                </div>
+                <div class="intro__links">
+                    <a class="intro__link link" href="#">
+                        Придбати
+                        <svg class="link__svg" width="54px" height="30px">
+                            <use xlink:href="images/sprite.svg#right-arrow">
+                            </use>
+                        </svg>
+                    </a>
+                    <a class="intro__video video box blue" data-fancybox
+                        style="background-image: url('images/video-bg.jpg')"
+                        href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
+                        Подивитись відео
+                    </a>
+                </div>
+                <div class="intro__images">
+                    <img class="intro__img" src="images/weapon.png" alt="Зброя">
                 </div>
             </div>
+            <!-- </div> -->
         </section>
-
-        <section class="functions">
-            <div class="container container-sm">
-                <!-- переделать как список -->
+    </div>
+    <!-- <div class="" style="background-color: red; height: 200px;"></div>
+    <div class="" style="background-color: green; height: 200px;"></div> -->
+    <!-- <div class="containers2">
+            <section class="functions">
+                <!-- <div class="container container-sm"> -->
+    <!-- переделать как список --
                 <div class="functions__functions functions-tab">
                     <div class="functions-tab__wrapper">
                         <a class="functions-tab__link functions-tab__link--tab" href="#tab-1">
@@ -511,15 +526,7 @@
                     <div class="functions-tab__tab functions-tab__tab--active" id="tab-3">
                         <div class="functions-tab__content">
                             <div class="functions-tab__top">
-                                <h2 class="functions-tab__title title">
-                                    Функціонал3
-                                </h2>
-                                <div class="functions-tab__text">
-                                    <p>
-                                        Унікальний чит на iOS підійде для всіх пристроїв
-                                        починаючи від айфону 4S+.
-                                    </p>
-                                </div>
+
                             </div>
                             <div class="functions-tab__bottom">
                                 <div class="functions-tab__wrap">
@@ -571,6 +578,15 @@
                                 </div>
                                 <div class="functions-tab__inner">
                                     <div class="functions-tab__box">
+                                        <h2 class="functions-tab__title title">
+                                            Функціонал3
+                                        </h2>
+                                        <div class="functions-tab__text">
+                                            <p>
+                                                Унікальний чит на iOS підійде для всіх пристроїв
+                                                починаючи від айфону 4S+.
+                                            </p>
+                                        </div>
                                         <h3 class="functions-tab__subtitle">опис:</h3>
                                         <ul class="functions-tab__items">
                                             <li class="functions-tab__item">
@@ -644,11 +660,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="container container--sm">
+                <!-- </div> -->
+    </section>
+    </div>
+    <!-- не удалял лишние обертки --
+        <div class="container3">
+            <section class="about">
+                <!-- <div class="container container--sm"> --
                 <div class="about__wrapper">
                     <div class="about__box">
                         <h2 class="about__title title title--bem">
@@ -734,11 +752,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--
-        <section class="rates">
-            <div class="container">
+                <!-- </div> --
+            </section>
+        </div>
+        <!-- не удалял лишние обертки --
+        <div class="container4">
+            <section class="rates">
+                <!-- <div class="container"> --
                 <div class="rates__box">
                     <h2 class="rates__title title">
                         тарифы
@@ -1410,11 +1430,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+                <!-- </div> -->
+    </section>
+    </div>
 
-        <section class="questions">
-            <div class="container container--sm">
+    <!-- не удалял лишние обертки --
+        <div class="container5">
+            <section class="questions">
+                <!-- <div class="container container--sm"> --
                 <div class="questions__wrapper">
                     <h2 class="questions__title title">
                         часті питання
@@ -1515,20 +1538,28 @@
                 <a class="questions__link" href="#">
                     У мене є питання
                 </a>
-            </div>
-        </section>
+                <!-- </div> --
+            </section>
+        </div>
     </main>
-
     <footer class="footer">
-        <!-- !!!свг с градиентом не работают через плагин -->
-        <!-- испаравить цвет свг вверху --
-        <section class="contacts">
-            <div class="container">
-                <div class="contacts__box">
+        <div class="footer__box">
+            <h2 class="footer__title title">
+                Контакти
+            </h2>
+        </div>
+        <div class="container6">
+            <div class="footer__wrapper">
+                <!-- !!!свг с градиентом не работают через плагин -->
+    <!-- испаравить цвет свг вверху -->
+
+    <!-- <section class="contacts"> -->
+    <!-- <div class="container"> -->
+    <!-- <div class="contacts__box">
                     <h2 class="contacts__title title">
                         Контакти
                     </h2>
-                </div>
+                </div> --
                 <form class="form">
                     <a class="form__link form__link--telegram" href="#">
                         <span></span>
@@ -1538,27 +1569,30 @@
                     <h3 class="form__subtitle">
                         Зворотній зв'язок
                     </h3>
-                    <label class="sr-only" for="name">
-                        <!-- Ваше ім'я --
-                    </label>
-                    <input class="form__input form__input--user" id="name-input" type="text" name="name"
-                        placeholder="Ваше ім'я" required
-                        oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
-                    <svg class="form__svg form__svg--user" width="18px" height="19px" fill="rgba(46, 58, 89, 0.43)">
-                        <path fill="rgba(46, 58, 89, 0.43)"></path>
-                        <use xlink:href="images/sprite.svg#user">
-                        </use>
-                    </svg>
-                    <label class="sr-only" for="email">
-                        Введіть ваш емейл
-                    </label>
-                    <input class="form__input form__input--mail" id="email-input" type="email" name="email"
-                        placeholder="Введіть ваш емейл" required
-                        oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
-                    <svg class="form__svg form__svg--mail" width="20px" height="15px">
-                        <use xlink:href="images/sprite.svg#mail">
-                        </use>
-                    </svg>
+                    <div class="form__inner">
+                        <label class="sr-only" for="name">
+                            <!-- Ваше ім'я --
+                        </label>
+                        <input class="form__input form__input--user" id="name-input" type="text" name="name"
+                            placeholder="Ваше ім'я" required
+                            oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
+                        <svg class="form__svg form__svg--user" width="18px" height="19px" fill="rgba(46, 58, 89, 0.43)">
+                            <path fill="rgba(46, 58, 89, 0.43)"></path>
+                            <use xlink:href="images/sprite.svg#user">
+                            </use>
+                        </svg>
+                        <label class="sr-only" for="email">
+                            Введіть ваш емейл
+                        </label>
+                        <input class="form__input form__input--mail" id="email-input" type="email" name="email"
+                            placeholder="Введіть ваш емейл" required
+                            oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
+                        <svg class="form__svg form__svg--mail" width="20px" height="15px">
+                            <use xlink:href="images/sprite.svg#mail">
+                            </use>
+                        </svg>
+                    </div>
+
                     <textarea class="form__message" name="message" id="message" placeholder="Коментар" required
                         oninvalid="this.setCustomValidity('Поле заповнене неправильно!')">
                     </textarea>
@@ -1572,18 +1606,21 @@
                         </button>
                     </div>
                 </form>
-            </div>
+                <!-- </div> -->
 
-            <div class="container">
+
+    <!-- </section> --
+
+            </div>
+        </div>
+        <div class="container7">
+            <div class="div">
                 <nav class="footer__menu menu">
-                    <a class=" menu__logo logo" href="#">
+                    <a class="menu__logo logo" href="#">
                         <img class="logo__menu" src="images/logo.svg" alt="logo">
                     </a>
-                    <button class="menu__btn" type="button">
-                        <span></span>
-                        <span class="sr-only">open menu</span>
-                    </button>
                     <ul class="menu__items">
+
                         <li class="menu__item">
                             <a class="menu__link menu__link--active" href="#">
                                 Головна
@@ -1614,6 +1651,7 @@
                                 Функціонал
                             </a>
                         </li>
+
                     </ul>
                     <div class="menu__nav">
                         <form class="dropdown">
@@ -1621,13 +1659,15 @@
                                 <option value="1" class="dropdown__optoon icon-ok">
                                     ru
                                 </option>
-                                <option value="0" class="dropdown__optoon icon-error">en</option>
+                                <option value="0" class="dropdown__optoon icon-error">
+                                    en
+                                </option>
                             </select>
                         </form>
                         <a class="menu__user link" href="#">
                             <svg class="menu__svg" width="22px" height="24px" fill="#ffffff">
                                 <path fill="#ffffff"></path>
-                                <use fill="#ffffff" xlink:href="images/sprite.svg#user-color">
+                                <use xlink:href="images/sprite.svg#user-color">
                                 </use>
                             </svg>
                         </a>
@@ -1637,10 +1677,9 @@
                     Захищено 2023 (C)
                 </div>
             </div>
-        </section>
+        </div>
     </footer> -->
-
-        <script src="js/main.min.js"></script>
+    <script src="js/main.min.js?_v=20230718004323"></script>
 </body>
 
 </html>

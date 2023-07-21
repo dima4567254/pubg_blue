@@ -6,7 +6,8 @@ body {
 body {
     font-weight: 700;
     font-family: 'Montserrat';
-    font-size: 18px;
+    // font-size: 18px;
+    // где то не будет хватать!!!
     line-height: 1.2;
     color: $default;
     letter-spacing: 0.6px;
@@ -46,8 +47,8 @@ body {
 
 .logo {
     &__menu {
-        width: 100px;
-        height: 65px;
+        width: 10rem;
+        height: 6.5rem;
         object-fit: cover;
         object-position: center;
     }
@@ -59,45 +60,45 @@ body {
 
 .title {
     font-weight: 800;
-    font-size: 45px;
+    font-size: $title-m-fz;
     text-align: center;
     text-transform: uppercase;
     color: $title;
 
-    @media (max-width: 1200px) {
-        font-size: 34px;
-    }
+    // @media (max-width: 1200px) {
+    //     font-size: 34px;
+    // }
 
-    @media (max-width: 992px) {
-        font-size: 32px;
-    }
+    // @media (max-width: 992px) {
+    //     font-size: 32px;
+    // }
 
-    @media (max-width: 768px) {
-        font-size: 30px;
-    }
+    // @media (max-width: 768px) {
+    //     font-size: 30px;
+    // }
 
-    @media (max-width: 576px) {
-        font-size: 26px;
-    }
+    // @media (max-width: 576px) {
+    //     font-size: 26px;
+    // }
 
     &--bem {
-        margin-bottom: 70px;
+        margin-bottom: 7rem;
 
-        @media (max-width: 1200px) {
-            margin-bottom: 60px;
-        }
+        // @media (max-width: 1200px) {
+        //     margin-bottom: 60px;
+        // }
 
-        @media (max-width: 992px) {
-            margin-bottom: 50px;
-        }
+        // @media (max-width: 992px) {
+        //     margin-bottom: 50px;
+        // }
 
-        @media (max-width: 768px) {
-            margin-bottom: 40px;
-        }
+        // @media (max-width: 768px) {
+        //     margin-bottom: 40px;
+        // }
 
-        @media (max-width: 576px) {
-            margin-bottom: 30px;
-        }
+        // @media (max-width: 576px) {
+        //     margin-bottom: 30px;
+        // }
     }
 }
 
@@ -106,17 +107,17 @@ body {
     &--bem {
         padding: $padding-main 0;
 
-        @media (max-width: 992px) {
-            padding: $padding-992 0;
-        }
+        // @media (max-width: 992px) {
+        //     padding: $padding-992 0;
+        // }
 
-        @media (max-width: 768px) {
-            padding: $padding-768 0;
-        }
+        // @media (max-width: 768px) {
+        //     padding: $padding-768 0;
+        // }
 
-        @media (max-width: 576px) {
-            padding: $padding-576 0;
-        }
+        // @media (max-width: 576px) {
+        //     padding: $padding-576 0;
+        // }
     }
 }
 

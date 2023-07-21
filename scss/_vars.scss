@@ -31,7 +31,18 @@ $hover-faq: linear-gradient(91.64deg, rgba(0, 148, 255, 0.11) 0.37%, rgba(5, 255
 
 
 
-
+$main-fz:1.8rem;
+$link-fz:1.7rem;
+$link2-fz:1.5rem;
+$subtitle-fz:2.1rem;
+$defout-fz:1.6rem;
+$title-fz:5.5rem;
+$slider-fz:2.7rem;
+$slider2-fz:3.9rem;
+$info-fz:3.0rem;
+$price-fz:4.5rem;
+$placeholder:1.4rem;
+$title-m-fz:4.5rem;
 
 
 /*$ac: #fcd7b6;
@@ -50,11 +61,11 @@ $hover-faq: linear-gradient(91.64deg, rgba(0, 148, 255, 0.11) 0.37%, rgba(5, 255
 
 
 //section
-$padding-main:100px;
-$padding-1200:60px;
-$padding-992:50px; //70
-$padding-768:40px; //50
-$padding-576:30px;
+$padding-main:10rem;
+$padding-1200:6rem;
+$padding-992:5rem; //70
+$padding-768:4rem; //50
+$padding-576:3rem;
 
 @mixin line-clamp-box($line-clamp, ) {
     display: -webkit-box;
@@ -102,7 +113,7 @@ $padding-576:30px;
 //     -webkit-line-clamp: $line-clamp;
 //     -webkit-box-orient: vertical;
 //     overflow: hidden;
-    
+
 // }
 
 // @mixin line-height($font-size, $line-height, ) {
